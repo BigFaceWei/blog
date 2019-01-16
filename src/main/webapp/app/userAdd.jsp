@@ -27,7 +27,7 @@
 <div class="container">
     <div class="row clearfix">
         <div class="col-md-12 column">
-            <s:form action="userAction!add.do" method="post">
+            <s:form action="userAction!add" method="post">
                 <s:token />
                 <div class="form-group">
                     <label for="account">账号</label>
@@ -37,12 +37,14 @@
                     <label for="pwd">密码</label>
                 <input type="password" class="form-control" name="user.userPassword" id="pwd" />
                 </div>
-                <div class="form-group">
-                <label for="userIsAdmin">身份</label>
-                <input id="userIsAdmin" name="user.userIsAdmin" type="radio" value="NO" checked="checked"/>用户
-                <input name="user.userIsAdmin" type="radio" value="YES"/>管理员 <br/>
-                </div>
-                </div> <button type="submit" class="btn btn-default">添加</button>
+                <s:if test="blogUserId != -1">
+                    <div class="form-group">
+                        <label for="userIsAdmin">身份</label>
+                        <input id="userIsAdmin" name="user.userIsAdmin" type="radio" value="NO" checked="checked"/>用户
+                        <input name="user.userIsAdmin" type="radio" value="YES"/>管理员 <br/>
+                    </div>
+                </s:if>
+                </div> <button type="submit" class="btn btn-default">确定</button>
             </s:form>
         </div>
     </div>

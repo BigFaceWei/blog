@@ -38,7 +38,6 @@ public class UserAction extends BaseAction {
     private List<String> pages = new ArrayList<String>();
     private String page = "1";
 
-
     public String findAll() {
         try {
             List<BlogUser> users = userService.findAll();
@@ -71,6 +70,16 @@ public class UserAction extends BaseAction {
     }
 
     public String goAdd() {
+        HttpSession session = request.getSession();
+        Object object = session.getAttribute("uid");
+
+        if (object != null) {
+            blogUserId = Integer.valueOf(object.toString());
+        }
+
+        ActionContext ac = ActionContext.getContext();
+        ac.put("blogUserId", blogUserId);
+
         return "goAdd";
     }
 

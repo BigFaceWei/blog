@@ -19,7 +19,7 @@ public class LoginAction extends BaseAction {
     private String result;
     private BlogUser user = new BlogUser();
     private Integer pageNum = 1;
-    private Integer maxPage = -1;
+    private Integer maxPage = 1;
     private static Integer pageSize = 10;
 
     /**

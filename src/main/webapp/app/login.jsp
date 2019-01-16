@@ -39,7 +39,7 @@
         <input type="text" id="username" name="username" class="username" placeholder="用户名" value="wxy">
         <input type="password" id="password" name="password" class="password" placeholder="密码">
         <button type="button" id="login">登录</button>
-        <button id="register" type="button">注册</button>
+        <button type="button" id="register">注册</button>
         <div class="error"><span>+</span></div>
     </form>
     <div class="connect">
