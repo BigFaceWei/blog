@@ -66,7 +66,7 @@
                     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                         <ul class="nav navbar-nav">
                             <li>
-                                <a href="userAction!findAll.do">用户管理</a>
+                                <a href="userAction!search.do">用户管理</a>
                             </li>
                         </ul>
                         <form class="navbar-form navbar-left" action="userAction!search.do"

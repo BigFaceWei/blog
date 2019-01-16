@@ -54,6 +54,7 @@
 
         <action name="userAction" class="com.wxy.action.UserAction">
             <result type="json">result</result>
+            <result name="login">/app/login.jsp</result>
             <result name="index">/app/index.jsp</result>
             <result name="goAdd">/app/userAdd.jsp</result>
             <result name="edit">/app/userEdit.jsp</result>

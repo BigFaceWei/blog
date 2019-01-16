@@ -38,21 +38,6 @@ public class UserAction extends BaseAction {
     private List<String> pages = new ArrayList<String>();
     private String page = "1";
 
-    public String findAll() {
-        try {
-            List<BlogUser> users = userService.findAll();
-            if (users != null) {
-                goIndex();
-                result = "true";
-            } else {
-                result = "false";
-            }
-        } catch (Exception e) {
-            e.printStackTrace();
-        }
-        return SUCCESS;
-    }
-
     public String search() {
         BlogUserExample userExample = new BlogUserExample();
         if (!StringUtils.isNullOrEmpty(userAccount)){
@@ -86,8 +71,9 @@ public class UserAction extends BaseAction {
     public String add() {
         if (userService.addUser(user)) {
             goIndex();
+            return "index";
         }
-        return "index";
+        return "login";
     }
 
     public String edit() {

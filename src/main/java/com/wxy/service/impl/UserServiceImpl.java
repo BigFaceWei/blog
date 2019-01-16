@@ -1,5 +1,6 @@
 package com.wxy.service.impl;
 
+import com.mysql.jdbc.StringUtils;
 import com.wxy.mapper.BlogUserMapper;
 import com.wxy.model.BlogUser;
 import com.wxy.model.BlogUserExample;
@@ -24,7 +25,7 @@ public class UserServiceImpl implements UserService {
     @Override
     public List<BlogUser> findAll() {
         BlogUserExample example = new BlogUserExample();
-        return userMapper.selectByExample(example, 0);
+        return userMapper.selectByExample(example, Integer.valueOf(0));
     }
 
     public List<BlogUser> search(BlogUserExample example, Integer pageFlag){
@@ -46,6 +47,14 @@ public class UserServiceImpl implements UserService {
     @Override
     public boolean addUser(BlogUser user) {
         boolean flag = false;
+        if (user == null) {
+            return flag;
+        }
+        if (StringUtils.isNullOrEmpty(user.getUserIsAdmin()))
+        {
+            user.setUserIsAdmin("NO");
+        }
+
         try {
             userMapper.insert(user);
             flag = true;
