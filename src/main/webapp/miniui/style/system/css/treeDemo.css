@@ -1,0 +1,44 @@
+.system_treeDemo_reload
+{
+	background-image: url(../images/treeDemo/arrow_refresh_small.png) ! important;
+}
+
+.system_treeDemo_collapse
+{
+	background-image: url(../images/treeDemo/collapse-all.gif) ! important;
+}
+
+.system_treeDemo_expand
+{
+	background-image: url(../images/treeDemo/expand-all.gif) ! important;
+}
+
+.system_treeDemo_dept
+{
+	background-image: url(../images/treeDemo/house.png) ! important;
+}
+
+.system_treeDemo_unit
+{
+	background-image: url(../images/treeDemo/unit.png) ! important;
+}
+
+.system_treeDemo_user
+{
+	background-image: url(../images/treeDemo/user.png) ! important;
+}
+
+.system_treeDemo_query
+{
+	background-image: url(../images/query_title.png) ! important;
+}
+
+.system_treeDemo_module
+{
+	background-image: url(../images/treeDemo/wrench.gif) ! important;
+}
+
+.system_treeDemo_module_leaf
+{
+	background-image: url(../images/treeDemo/wrench_orange.gif) ! important;
+}

@@ -1,0 +1,174 @@
+BODY {
+    FONT-FAMILY: "ÀŒÃÂ"; FONT-SIZE: 12px; LINE-HEIGHT: 18px; MARGIN: 0px
+}
+
+
+INPUT
+{
+  FONT-SIZE: 9pt;
+}
+INPUT.Green
+{
+  FONT-SIZE: 9pt;
+  BACKGROUND-COLOR: #CCFF99;
+}
+INPUT.Gray
+{
+  FONT-SIZE: 9pt;
+  BACKGROUND-COLOR: #E7E7E7;
+}
+INPUT.Pink
+{
+  FONT-SIZE: 9pt;
+  BACKGROUND-COLOR: #FF99FF;
+}
+SELECT
+{
+  FONT-SIZE: 9pt;
+}
+SELECT.Green
+{
+  FONT-SIZE: 9pt;
+  BACKGROUND-COLOR: #CCFF99;
+}
+SELECT.Gray
+{
+  FONT-SIZE: 9pt;
+  BACKGROUND-COLOR: #E7E7E7;
+
+}
+SELECT.Pink
+{
+  FONT-SIZE: 9pt;
+  BACKGROUND-COLOR: #FF99FF;
+}
+TEXTAREA
+{
+  FONT-SIZE: 9pt;
+}
+TEXTAREA.Green
+{
+  FONT-SIZE: 9pt;
+  BACKGROUND-COLOR: #CCFF99;
+}
+TEXTAREA.Gray
+{
+  FONT-SIZE: 9pt;
+  BACKGROUND-COLOR: #E7E7E7;
+}
+TEXTAREA.Pink
+{
+  FONT-SIZE: 9pt;
+  BACKGROUND-COLOR: #FF99FF;
+}
+TD
+{
+  FONT-SIZE: 9pt;
+  line-height: 18px;
+}
+.TextnoBorder
+{
+  background-color: #FFFFFF;
+  border: #cccccc 1px solid;
+  height: 20px;
+  padding: 1px;
+}
+.TableBorder {
+  border: 1px solid #145BA3;
+  border-collapse: collapse;
+}
+
+.TableBorderDark
+{
+        background-color: #145BA3;
+}
+
+.TableBodyDark
+{
+     background-color: #dddddd;
+  		
+}
+.TdOddnoBorder
+{
+  height : 21px ;
+  padding : 2px;
+  background-color: #FFFFFF;
+}
+.TdEvennoBorder
+{
+  height : 21px ;
+  padding : 2px;
+  background-color:#F7FFEF;
+}
+
+.Td
+{
+	background-image: url(../../images/workflow/td_bg.png);
+}
+.ButtonStyleCom
+{
+  padding : 2px;
+  height:20px;
+  width:55px;
+  cursor: pointer;
+  border:1px solid #999999;
+}
+.hide {
+  display: none;
+  visibility: hidden;
+}
+.transparent {
+  border:0px;
+	background-color:transparent;
+	padding-right:0px;
+	padding:0px;
+}
+
+.textarea{
+	font-size: 12px; 
+	width: 100%;
+	border:none;
+}
+
+.title{
+	color:red;
+	style:font-family:'¡• È';
+	font-size:27px;
+}
+
+.th{
+  position:relative;
+  cursor: default;
+  font-size: 9pt;
+  color: #000000;
+  line-height: 22px;
+  background-color: #f9f9f9;
+  top: expression(this.parentElement.parentElement.parentElement.parentElement.scrollTop-1); /*IE5+ only*/
+  z-index: 2;
+}
+
+.thead th.locked  {
+  position:relative;
+  cursor: default;
+  font-size: 9pt;
+  color: #ffffff;
+  line-height: 22px;
+  background-color: #f9f9f9;
+}
+
+.btn1_mouseout {
+             BORDER-RIGHT: #9BAFFF 1px solid; PADDING-RIGHT: 2px; BORDER-TOP: 
+            #9BAFFF 1px solid; PADDING-LEFT: 0px; FONT-SIZE: 12px; FILTER: 
+            progid:DXImageTransform.Microsoft.Gradient(GradientType=0, 
+            StartColorStr=#ffffff, EndColorStr=#9BAFFF); BORDER-LEFT: #9BAFFF 
+            1px solid; CURSOR: hand; COLOR: black; PADDING-TOP: 2px; 
+            BORDER-BOTTOM: #9BAFFF 1px solid
+            } 
+.btn1_mouseover {
+             BORDER-RIGHT: #9BAFFF 1px solid; PADDING-RIGHT: 2px; BORDER-TOP: 
+            #9BAFFF 1px solid; PADDING-LEFT: 0px; FONT-SIZE: 12px; FILTER: 
+            progid:DXImageTransform.Microsoft.Gradient(GradientType=0, 
+            StartColorStr=#ffffff, EndColorStr=#9BAFFF); BORDER-LEFT: #9BAFFF 
+            1px solid; CURSOR: hand; COLOR: black; PADDING-TOP: 2px; 
+            BORDER-BOTTOM: #9BAFFF 1px solid
+            } 

@@ -1,0 +1,352 @@
+BODY {
+	FONT-FAMILY: "宋体";
+	FONT-SIZE: 12px;
+	LINE-HEIGHT: 18px;
+	MARGIN: 0px
+}
+
+BODY {
+	SCROLLBAR-3DLIGHT-COLOR: #99bbe8;
+	SCROLLBAR-ARROW-COLOR: #000000;
+	SCROLLBAR-DARKSHADOW-COLOR: #99bbe8;
+	SCROLLBAR-BASE-COLOR: #bcd2ef /*#52B4B1;蓝色  #52B4B1;绿色 */
+}
+
+FONT {
+	FONT-FAMILY: "宋体";
+	FONT-SIZE: 12px;
+	LINE-HEIGHT: 18px
+}
+
+.smallFont {
+	FONT-FAMILY: "宋体";
+	FONT-SIZE: 12px;
+	LINE-HEIGHT: 18px
+}
+
+.middleFont {
+	FONT-FAMILY: "宋体";
+	FONT-SIZE: 14px;
+	LINE-HEIGHT: 20px
+}
+
+.bigFont {
+	FONT-FAMILY: "宋体";
+	FONT-SIZE: 16px;
+	LINE-HEIGHT: 22px
+}
+
+A {
+	COLOR: #0066c7;
+	FONT-FAMILY: "宋体";
+	FONT-SIZE: 12px;
+	LINE-HEIGHT: 18px;;
+}
+
+A:active {
+	COLOR: #0066c7;
+	FONT-FAMILY: "宋体";
+	FONT-SIZE: 12px;
+	LINE-HEIGHT: 18px;
+}
+
+A:visited {
+	COLOR: #0066c7;
+	FONT-FAMILY: "宋体";
+	FONT-SIZE: 12px;
+	LINE-HEIGHT: 18px;
+}
+
+A:hover {
+	COLOR: #0066c7;
+	FONT-FAMILY: "宋体";
+	FONT-SIZE: 12px;
+	LINE-HEIGHT: 18px;
+	text-decoration: none
+}
+
+.SpecialA:hover {
+	COLOR: #0066c7;
+	FONT-FAMILY: "宋体";
+	FONT-SIZE: 12px;
+	LINE-HEIGHT: 18px;
+	TEXT-DECORATION: none
+}
+
+.A1 {
+	COLOR: #342fff;
+	FONT-FAMILY: "宋体";
+	FONT-SIZE: 12px;
+	LINE-HEIGHT: 18px;
+	text-decoration: none;
+}
+
+.A1:active {
+	COLOR: #342fff;
+	FONT-FAMILY: "宋体";
+	FONT-SIZE: 12px;
+	LINE-HEIGHT: 18px;
+	text-decoration: none;
+}
+
+.A1:visited {
+	COLOR: #342fff;
+	FONT-FAMILY: "宋体";
+	FONT-SIZE: 12px;
+	LINE-HEIGHT: 18px;
+	text-decoration: none;
+}
+
+.A1:hover {
+	COLOR: #342fff;
+	FONT-FAMILY: "宋体";
+	FONT-SIZE: 12px;
+	LINE-HEIGHT: 18px;
+	text-decoration: none;
+}
+
+TABLE {
+	word-break: break-all;
+	word-wrap: break-word;
+	FONT-FAMILY: "宋体";
+	FONT-SIZE: 12px;
+	LINE-HEIGHT: 18px;
+	border: #dddddd solid;
+	border-width: 1 0 0 1
+}
+
+TR {
+	background-color: expression("#FFFFFF", "#f5ffef" . split(",") [
+		rowIndex % 2 ] )
+}
+
+TD {
+	FONT-FAMILY: "宋体";
+	FONT-SIZE: 12px;
+	LINE-HEIGHT: 18px;
+	border: #dddddd solid;
+	border-width: 0 1 1 0;
+}
+
+thead td {
+	background:url(../images/TableDefault/thbg.gif) repeat-x top;
+	font: menu;
+	border: 1px outset white;
+	cursor: default;
+	padding-top: 0;
+	padding: bottom :   0;
+	border-top: 1px solid buttonhighlight;
+	border-left: 1px solid buttonhighlight;
+	border-right: 1px solid buttonshadow;
+	border-bottom: 1px solid buttonshadow;
+	height: 22px;
+}
+
+thead .arrow {
+	font-family: webdings;
+	color: black;
+	padding: 0;
+	font-size: 10px;
+	height: 15px;
+	width: 10px;
+	overflow: hidden;
+	margin-bottom: 2;
+	margin-top: -3;
+	padding: 0;
+	padding-top: 0;
+	padding-bottom: 2;
+}
+
+/*
+table的标题样式
+*/
+TH {
+	background-image: url(../images/TableDefault/headbg.gif);
+	FONT-FAMILY: "宋体";
+	FONT-SIZE: 12px;
+	LINE-HEIGHT: 24px;
+	border: #99bbe8 solid;
+	border-width: 0 1 1 0;
+	COLOR: #15429d;
+}
+
+/*
+导航栏样式
+*/
+.navigation {
+	background-image: url(../images/TableDefault/002.png);
+	FONT-FAMILY: "宋体";
+	FONT-SIZE: 12px;
+	LINE-HEIGHT: 18px;
+	border: #99bbe8 solid;
+	border-width: 0 1 1 0;
+}
+
+.tr_header {
+	COLOR: #000000;
+	FONT-WEIGHT: bold;
+	background-color: #99bbe8;
+}
+
+.tr_no {
+	BACKGROUND: buttonface;
+}
+
+/*
+按钮样式
+*/
+.CATitle2{
+	height:100%;	
+	vertical-align: middle;
+}
+.CATitle2 ul {
+	margin: 0;
+	padding: 0;
+}
+
+.CATitle2 li {
+	display: inline;
+	margin: 0;
+	padding: 0 2px;
+	list-style-type: none;
+}
+
+.CATitle2 div {
+	display: inline;
+}
+
+.CATitle2 li a {
+	padding-left: 10px;
+	padding-right: 10px;
+	BORDER-RIGHT: buttonshadow 1px solid;
+	BORDER-TOP: buttonhighlight 1px solid;
+	BORDER-LEFT: buttonhighlight 1px solid;
+	BORDER-BOTTOM: buttonshadow 1px solid;
+	BACKGROUND: buttonface;
+	FONT: menu;
+	CURSOR: default;
+	PADDING-TOP: 0px;
+	HEIGHT: 16px;
+}
+
+.CATitle2 li a:hover {
+	BORDER-RIGHT: #9BAFFF 1px solid;
+	BORDER-TOP: #9BAFFF 1px solid;
+	FONT-SIZE: 12px;
+	FILTER: progid : DXImageTransform.Microsoft.Gradient ( GradientType = 0,StartColorStr = #ffffff, EndColorStr = #9BAFFF );
+	BORDER-LEFT: #9BAFFF 1px solid;
+	CURSOR: hand;
+	COLOR: black;
+	PADDING-TOP: 2px;
+	BORDER-BOTTOM: #9BAFFF 1px solid
+}
+
+.CATitle2 li a:active {
+	BORDER-RIGHT: #9BAFFF 1px solid;
+	BORDER-TOP: #9BAFFF 1px solid;
+	FONT-SIZE: 12px;
+	FILTER: progid : DXImageTransform.Microsoft.Gradient ( GradientType = 0,StartColorStr = #ffffff, EndColorStr = #9BAFFF );
+	BORDER-LEFT: #9BAFFF 1px solid;
+	CURSOR: hand;
+	COLOR: black;
+	PADDING-TOP: 2px;
+	BORDER-BOTTOM: #9BAFFF 1px solid
+}
+
+.CATitle2 li a:link {
+	BORDER-RIGHT: #9BAFFF 1px solid;
+	BORDER-TOP: #9BAFFF 1px solid;
+	FONT-SIZE: 12px;
+	FILTER: progid : DXImageTransform.Microsoft.Gradient ( GradientType = 0,StartColorStr = #ffffff, EndColorStr = #9BAFFF );
+	BORDER-LEFT: #9BAFFF 1px solid;
+	CURSOR: hand;
+	COLOR: black;
+	PADDING-TOP: 2px;
+	BORDER-BOTTOM: #9BAFFF 1px solid
+}
+
+.CATitle2 li a:visited {
+    padding-left: 10px;
+    padding-right: 10px;
+	BORDER-RIGHT: #9BAFFF 1px solid;
+	BORDER-TOP: #9BAFFF 1px solid;
+	FONT-SIZE: 12px;
+	FILTER: progid : DXImageTransform.Microsoft.Gradient ( GradientType = 0, StartColorStr = #ffffff, EndColorStr = #9BAFFF );
+	BORDER-LEFT: #9BAFFF 1px solid;
+	CURSOR: hand;
+	COLOR: black;
+	PADDING-TOP: 2px;
+	BORDER-BOTTOM: #9BAFFF 1px solid
+}
+
+.btn1_mouseout {
+	BORDER-RIGHT: #9BAFFF 1px solid;
+	PADDING-RIGHT: 2px;
+	BORDER-TOP: #9BAFFF 1px solid;
+	PADDING-LEFT: 0px;
+	FONT-SIZE: 12px;
+	FILTER: progid : DXImageTransform.Microsoft.Gradient ( GradientType = 0, StartColorStr = #ffffff, EndColorStr = #9BAFFF );
+	BORDER-LEFT: #9BAFFF 1px solid;
+	CURSOR: hand;
+	COLOR: black;
+	PADDING-TOP: 2px;
+	BORDER-BOTTOM: #9BAFFF 1px solid
+}
+
+.btn1_mouseover {
+	BORDER-RIGHT: #9BAFFF 1px solid;
+	PADDING-RIGHT: 2px;
+	BORDER-TOP: #9BAFFF 1px solid;
+	PADDING-LEFT: 0px;
+	FONT-SIZE: 12px;
+	FILTER: progid : DXImageTransform.Microsoft.Gradient ( GradientType = 0, StartColorStr = #ffffff, EndColorStr = #9BAFFF );
+	BORDER-LEFT: #9BAFFF 1px solid;
+	CURSOR: hand;
+	COLOR: black;
+	PADDING-TOP: 2px;
+	BORDER-BOTTOM: #9BAFFF 1px solid
+}
+
+.TableStrOut {
+	white-space: nowrap;
+	text-overflow: ellipsis;
+	overflow: hidden;
+	width: 130px;
+}
+
+/*
+tableview:分组样式
+*/
+.group_header {
+	background-image: url(../images/TableDefault/table_head_bg.gif);
+		BORDER-LEFT: #99bbe8 1px solid;
+	BORDER-RIGHT: #99bbe8 1px solid;
+	BORDER-TOP: #99bbe8 1px solid;
+	HEIGHT: 24px;
+}
+
+/*
+控件disabled样式
+*/
+.ctr_disabled {
+	font-family: "宋体";
+	font-size: 14px;
+	font-style: normal;
+	color: black;
+	text-decoration: none;
+	background-color: #E2E4DA;
+	border: 1px solid #999999;
+}
+
+/*
+table可拖动列宽度样式
+*/
+.resizeDivClass {
+	position: relative;
+	background-color:transparent;
+	width: 1;
+	HEIGHT: 18px;
+	z-index: 1;
+	left: expression(this.parentElement.offsetWidth-3);
+	cursor: e-resize;
+}

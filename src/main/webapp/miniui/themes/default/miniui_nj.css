@@ -1,0 +1,12 @@
+input.mini-doubledatepicker
+{
+    visibility:hidden;
+    border:0;
+    padding:0;
+    height:21px;
+    width:125px;
+}
+.mini-doubledatepicker .mini-buttonedit-icon
+{
+    background:url(images/datepicker/date.gif) no-repeat 50% 2px;
+}

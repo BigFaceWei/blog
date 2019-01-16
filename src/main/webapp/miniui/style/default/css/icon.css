@@ -1,0 +1,230 @@
+.pad-left{
+    padding-left:20px;
+    display:block;
+}
+
+.icon-cls {
+    background: url(../images/icons/class.gif) no-repeat !important;
+}
+.icon-event {
+    background: url(../images/icons/event.gif) no-repeat !important;
+}
+.icon-config {
+    background: url(../images/icons/config.gif) no-repeat !important;
+}
+
+.icon-attachment {
+    background: url(../images/icons/attachment.png) no-repeat !important;
+}
+
+.icon-prop {
+    background: url(../images/icons/prop.gif) no-repeat !important;
+}
+.icon-method {
+    background: url(../images/icons/method.gif) no-repeat !important;
+}
+.icon-cmp {
+    background: url(../images/icons/cmp.gif) no-repeat !important;
+}
+.icon-pkg {
+    background: url(../images/icons/pkg.gif) no-repeat !important;
+}
+.icon-fav {
+    background: url(../images/icons/fav.gif) no-repeat !important;
+}
+.icon-static {
+    background: url(../images/icons/static.gif) no-repeat !important;
+}
+.icon-docs {
+    background: url(../images/icons/docs.gif) no-repeat !important;
+}
+.icon-expand-all {
+    background: url(../images/icons/expand-all.gif) no-repeat !important;
+}
+.icon-collapse-all {
+    background: url(../images/icons/collapse-all.gif) no-repeat !important;
+}
+.icon-expand-members {
+    background: url(../images/icons/expand-members.gif) no-repeat !important;
+}
+.icon-hide-inherited {
+    background: url(../images/icons/hide-inherited.gif) no-repeat !important;
+}
+.icon-org {
+    background: url(../images/icons/org.gif) no-repeat !important;
+}
+
+.icon-view {
+    background: url(../images/icons/view.png) no-repeat !important;
+}
+
+.icon-save {
+    background: url(../images/icons/save.gif) no-repeat !important;
+}
+.icon-save-back {
+    background: url(../images/icons/save-back.png) no-repeat !important;
+}
+.icon-add
+{
+    background: url(../images/icons/add.png) no-repeat !important;
+}
+.icon-delete
+{
+    background: url(../images/icons/delete.png) no-repeat !important;
+}
+.icon-add-row {
+    background: url(../images/icons/add-row.gif) no-repeat !important;
+}
+.icon-delete-row {
+    background: url(../images/icons/delete-row.gif) no-repeat !important;
+}
+.icon-back {
+    background: url(../images/icons/back.png) no-repeat !important;
+}
+.icon-search {
+    background: url(../images/icons/search.png) no-repeat !important;
+}
+.icon-search-row {
+    background: url(../images/icons/search-row.png) no-repeat !important;
+}
+.icon-reload {
+    background: url(../images/icons/reload.png) no-repeat !important;
+}
+.icon-reset {
+    background: url(../images/icons/reload.png) no-repeat !important;
+}
+.icon-print {
+    background: url(../images/icons/print.gif) no-repeat !important;
+}
+.icon-export {
+    background: url(../images/icons/print.gif) no-repeat !important;
+}
+.icon-help {
+    background: url(../images/icons/help.png) no-repeat !important;
+}
+.icon-check {
+    background: url(../images/icons/check.png) no-repeat !important;
+}
+.icon-copy {
+    background: url(../images/icons/copy.png) no-repeat !important;
+}
+.icon-example {
+    background: url(../images/icons/example.gif) no-repeat !important;
+}
+.icon-retry {
+    background: url(../images/icons/retry.png) no-repeat !important;
+}
+.icon-send-now {
+    background: url(../images/icons/send-now.gif) no-repeat !important;
+}
+.icon-receive-now {
+    background: url(../images/icons/send-receive.gif) no-repeat !important;
+}
+.icon-edit {
+    background: url(../images/icons/edit.png) no-repeat !important;
+}
+.icon-checked {
+    background: url(../images/icons/checked.gif) no-repeat !important;
+}
+.icon-unchecked {
+    background: url(../images/icons/unchecked.gif) no-repeat !important;
+}
+.icon-pick-button {
+    background: url(../images/icons/pick-button.gif) no-repeat !important;
+}
+.icon-cancel {
+    background: url(../images/icons/cancel.png) no-repeat !important;
+}
+.icon-apply {
+    background: url(../images/icons/apply.png) no-repeat !important;
+}
+.icon-offset {
+    background: url(../images/icons/offset.png) no-repeat !important;
+}
+.icon-success {
+    background: url(../images/icons/success.gif) no-repeat !important;
+}
+.icon-forum {
+    background: url(../images/icons/forum.gif) no-repeat !important;
+}
+.icon-pdf {
+    background: url(../images/icons/pdf.gif) no-repeat !important;
+}
+.icon-excel {
+    background: url(../images/icons/excel.gif) no-repeat !important;
+}
+.icon-html {
+    background: url(../images/icons/html-icon.png) no-repeat !important;
+}
+.icon-txt {
+    background: url(../images/icons/txt-icon.gif) no-repeat !important;
+}
+.icon-word {
+    background: url(../images/icons/word.gif) no-repeat !important;
+}
+.icon-preprint {
+    background: url(../images/icons/pre_print.gif) no-repeat !important;
+}
+.icon-btncom {
+	 background: url(../images/icons/prop.gif) no-repeat !important;
+	}
+.icon-redo{
+    background:url('../images/icons/redo.png') no-repeat !important;
+}
+.icon-remove{
+    background:url('../images/icons/edit_remove.png') no-repeat !important;
+}
+.icon-cut{
+    background:url('../images/icons/cut.png') no-repeat !important;
+}
+.icon-ok{
+    background:url('../images/icons/ok.png') no-repeat !important;
+}
+.icon-no{
+    background:url('../images/icons/no.png') no-repeat !important;
+}
+.icon-undo{
+    background:url('../images/icons/undo.png') no-repeat !important;
+}
+.icon-flow{
+    background:url('../images/icons/pkg.gif') no-repeat !important;
+}
+.icon-kill{
+    background:url('../images/icons/delete.gif') no-repeat !important;
+}
+.icon-send{  
+    background:url('../images/icons/send-now.gif') no-repeat !important;
+}
+.icon-opinion{
+    background:url('../images/icons/view.png') no-repeat !important;
+}
+.icon-tabs{
+    background:url('../images/icons/tabs.gif') no-repeat !important;
+}
+.icon-grid{
+    background:url('../images/icons/icon-grid.gif') no-repeat !important;
+}
+.icon-close{
+    background:url('../images/icons/close.gif') no-repeat !important;
+}
+.icon-stepback{
+    background:url('../images/icons/stepback.gif') no-repeat !important;
+}
+.icon-stopworkflow{
+    background:url('../images/icons/stopworkflow.gif') no-repeat !important;
+}
+.icon-activeworkflow{
+    background:url('../images/icons/activeworkflow.gif') no-repeat !important;
+}
+.icon-abolishworkflow{
+    background:url('../images/icons/abolishworkflow.gif') no-repeat !important;
+}
+.icon-workflowpicture{
+    background:url('../images/icons/workflowpicture.png') no-repeat !important;
+}
+.icon-log{
+    background:url('../images/icons/log.png') no-repeat !important;
+}
+.icon-workflowform{
+    background:url('../images/icons/workflowform.gif') no-repeat !important;
+}

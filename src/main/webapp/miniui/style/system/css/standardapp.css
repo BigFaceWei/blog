@@ -1,0 +1,1400 @@
+/*
+'*程序功能：用于设定Web页面的Css
+'*作    者：Mr.Davis Zhang
+'*修改时间：2002/12/26
+*/
+
+BODY
+{
+    FONT-SIZE: 9pt;
+    CURSOR: default;
+    FONT-FAMILY: verdana,arial,sans serif;
+    
+    background-color : #ffffff;
+    background-attachment: fixed; 
+    /*ackground-image: url(/DMIS/images/PAGES/from_01.gif); */
+    background-repeat: repeat;
+	margin-left: 0px;
+	margin-top: 0px;
+	margin-right: 0px;
+	margin-bottom: 0px;
+
+	SCROLLBAR-FACE-COLOR:#f2f2f2;
+	SCROLLBAR-HIGHLIGHT-COLOR:#0F5748;
+	SCROLLBAR-SHADOW-COLOR:#0F5748;
+	SCROLLBAR-ARROW-COLOR:#0F5748;
+	SCROLLBAR-BASE-COLOR:#000000;
+	SCROLLBAR-DARKSHADOW-COLOR: #DFF6F1;
+	SCROLLBAR-TRACK-COLOR: #DFF6F1;
+}
+
+.ToolBarBody   
+{
+    FONT-SIZE: 12pt;
+    font-family:黑体;        
+    margin-top:0;
+    margin-left:0;
+    margin-Right:0;
+    margin-Bottom:0;
+    MARGIN: 0px;
+    background-color:#D9D9D9;	
+	}
+	
+.MainBody	/*工作区Body*/
+{
+    SCROLLBAR-FACE-COLOR: #1d897c;	
+    FONT-SIZE: 70.5%;
+    SCROLLBAR-HIGHLIGHT-COLOR: #ffffff;
+    CURSOR: default;
+    SCROLLBAR-SHADOW-COLOR: #ffffff;
+    SCROLLBAR-ARROW-COLOR: #000000;
+    FONT-FAMILY: verdana,arial,sans serif;
+    SCROLLBAR-DARKSHADOW-COLOR: #000000;
+    SCROLLBAR-BASE-COLOR: #000000;   
+    margin-top:0;
+    margin-left:0;
+    margin-Right:0;
+    margin-Bottom:0;
+    MARGIN: 0px;
+    background-color:#ffffff;	
+}
+
+.ListMainBody  /*列表工作区Body*/
+{
+    margin-top:0;
+    margin-left:0;
+    margin-Right:0;
+    margin-Bottom:0;
+    MARGIN: 0px;
+    text:"#000000";
+    /*background-color:#FFFFFF;*/
+  }
+	
+.StatusBody   /*状态栏BoDy*/
+{
+    margin-top:0;
+    margin-left:0;
+    margin-Right:0;
+    margin-Bottom:0;
+    MARGIN: 0px;
+    background-color:#1d897c;	 
+}
+
+.TitleBody    /*标题栏BoDy*/
+{
+	margin-top:0;
+    margin-left:0;
+    margin-Right:0;
+    margin-Bottom:0;
+    MARGIN: 0px;
+    background-color:#6699cc;	   
+    /*background-color:#4662a2;	   */
+	}		
+.TreeBody  /*栏目树Body*/
+{
+  margin-left:10;
+  font-family:宋体;
+  font-size:9pt;
+  background-color:#ffffff; 
+  
+	}	
+.FlowBody  /*流程主页面Body*/
+{
+    margin-top:0;
+    margin-left:0;
+    margin-Right:0;
+    margin-Bottom:0;
+    MARGIN: 0px;
+    background-color:#fefcf6;		
+	}
+.EditBODY
+{
+    BORDER-RIGHT: 0px;
+    BORDER-TOP: 0px;
+    BACKGROUND: buttonface;
+    MARGIN: 0px;
+    BORDER-LEFT: 0px;
+    CURSOR: default;
+    BORDER-BOTTOM: 0px;
+    FONT-SIZE: 9pt
+	}	
+	
+.RunBODY
+{
+    SCROLLBAR-FACE-COLOR: #6699cc;
+    FONT-SIZE:medium;
+    SCROLLBAR-HIGHLIGHT-COLOR: #ffffff;
+    CURSOR: default;
+    SCROLLBAR-SHADOW-COLOR: #ffffff;
+    SCROLLBAR-ARROW-COLOR: #000000;
+    FONT-FAMILY: verdana,arial,sans serif;
+    SCROLLBAR-DARKSHADOW-COLOR: #000000;
+    SCROLLBAR-BASE-COLOR: #000000
+}
+	
+.coolBar
+{
+    BORDER-RIGHT: buttonface 0px solid;
+    BORDER-TOP: buttonface 0px solid;
+    DISPLAY: block;
+    FONT-WEIGHT: bold;
+    BORDER-LEFT: buttonface 0px solid;
+    BORDER-BOTTOM: buttonface 0px solid
+}	
+.FixTable
+{
+    FONT-SIZE: 9pt;
+    LINE-HEIGHT: 150%;  
+    TABLE-LAYOUT:fixed;  
+    Z-INDEX: 1
+	}
+.clsBBarRaised
+{
+    PADDING-RIGHT: 10px;
+    BORDER-TOP: #000033 1px solid;
+    PADDING-LEFT: 10px;
+    PADDING-BOTTOM: 0px;
+    PADDING-TOP: 0px;
+    BORDER-BOTTOM: #000033 1px solid
+}	
+
+IMG
+{
+	border: 0
+}
+
+FORM
+{
+    FONT-FAMILY: 宋体;
+    FONT-SIZE: 9pt;
+    LINE-HEIGHT: 150%
+}
+DIV
+{
+    FONT-FAMILY: 宋体;
+    FONT-SIZE: 9pt;
+    LINE-HEIGHT: 150%  
+}
+.statusDiv
+{
+	color:#ffffff;
+    FONT-FAMILY: 宋体;
+    FONT-SIZE: 9pt;
+	
+}
+.TitleDiv   /*题头字Div*/
+{
+	color:#ffffff;
+    FONT-FAMILY: 宋体;
+    FONT-SIZE: 22pt;
+    font-weight:bold;
+	}
+.trWorkListtitle   /*myWork标题行*/
+{
+ BORDER-TOP: #7c9ccf 1px solid; 
+ FONT-WEIGHT: bold; 
+ FONT-SIZE: 9pt; 
+ BACKGROUND: #8caae7; 
+ COLOR: #ffffff; 
+ BORDER-BOTTOM: #7c9ccf 1px solid; 
+ FONT-FAMILY: 宋体; 
+ HEIGHT: 18px; 
+ TEXT-ALIGN: center	
+	}
+.tdWorkListtitle  /*myWork标题表格*/
+{
+  BORDER-RIGHT: #999999 1px solid; 
+  PADDING-RIGHT: 2px; 
+  BORDER-TOP: #999999 1px solid; 
+  PADDING-LEFT: 2px; 
+  PADDING-BOTTOM: 2px;
+  BORDER-LEFT: #999999 0px solid; 
+  PADDING-TOP: 2px; 
+  BORDER-BOTTOM: #999999 1px solid
+}	
+.tbWorkframe   /*myWork表格边框*/
+{
+	BORDER-RIGHT: #7c9ccf 1px solid;
+	BORDER-TOP: #7c9ccf 1px solid; 
+	MARGIN-TOP: 5px; 
+	BORDER-LEFT: #7c9ccf 1px solid; 
+	BORDER-BOTTOM: #7c9ccf 1px solid; 
+	BORDER-COLLAPSE: collapse; 
+	BACKGROUND-COLOR: #ffffff
+}	
+.tdWorkList  /*myWork的表格*/
+{
+	PADDING-RIGHT: 4px;
+    PADDING-LEFT: 0px;
+	PADDING-BOTTOM: 0px;
+	PADDING-TOP: 0px
+}
+.divWorktbtitletext /*myWork的表格标题文字*/
+ {
+	FONT-WEIGHT: bold;
+	FONT-FAMILY: "Arial"
+}
+.tbWorktoolbar   /*myWork标题工具*/
+{
+	BORDER-RIGHT: #253e82 0px double; 
+	BORDER-TOP: #253e82 0px double; 
+	MARGIN-TOP: 2px; MARGIN-BOTTOM: 2px; 
+	PADDING-BOTTOM: 3px; 
+	BORDER-LEFT: #253e82 0px double; 
+	BORDER-BOTTOM: #253e82 1px double; 
+	BORDER-COLLAPSE: collapse
+}
+.TabOutside
+{
+	padding-right: 0px;
+	padding-left: 0px;
+	padding-bottom: 0px;
+	margin: 0px;
+	overflow: auto;
+	width: 98%;
+	border-top-style: none;
+	padding-top: 0px;
+	border-right-style: none;
+	border-left-style: none;
+	height: 98%;
+	text-align: center;
+	border-bottom-style: none;
+}
+.TabContentOutside
+{
+	padding-right: 0px;
+	padding-left: 0px;
+	padding-bottom: 0px;
+	margin: 0px;
+	border-top-style: none;
+	padding-top: 0px;
+	border-right-style: none;
+	border-left-style: none;
+	text-align: center;
+	border-bottom-style: none;
+}
+.tdTitle
+{
+	background-color:#ccd6eb;	
+	}
+	
+.tdWorkRow   /*mywork工作行*/
+{
+	PADDING-RIGHT: 4px; 
+	PADDING-LEFT: 4px; 
+	PADDING-BOTTOM: 0px; 
+	PADDING-TOP: 0px
+}
+.titlebar   /*标题*/
+{
+	PADDING-LEFT: 10px; 
+	MARGIN-BOTTOM: 5px; 
+	FONT: bold 14px/20px "Arial"; 
+	WIDTH: 100%; 
+	COLOR: #ffffff; 
+	PADDING-TOP: 2px; 
+	BACKGROUND-COLOR: #7f99cc;
+}
+.tdFlowframe  /*流程边框*/
+{
+	BORDER-RIGHT: #ec6b76 1px solid;
+	BORDER-TOP: #ec6b76 1px solid; 
+	MARGIN-TOP: 5px; 
+	BORDER-LEFT: #ec6b76 1px solid; 
+	BORDER-BOTTOM: #ec6b76 1px solid; 
+	BORDER-COLLAPSE: collapse; 
+	BACKGROUND-COLOR: #fcf9eb	
+	}	
+.tdFlowArchive  /*归档流程边框*/
+{
+	BORDER-RIGHT: #ec6b76 1px solid;
+	BORDER-TOP: #ec6b76 1px solid; 
+	MARGIN-TOP: 5px; 
+	BORDER-LEFT: #ec6b76 1px solid; 
+	BORDER-BOTTOM: #ec6b76 1px solid; 
+	BORDER-COLLAPSE: collapse; 	
+	}		
+.FlowTitle
+{
+	PADDING-LEFT: 10px; 
+	MARGIN-BOTTOM: 5px; 
+	FONT: bold 14px/20px "Arial"; 
+	WIDTH: 100%; 
+	COLOR: #000000; 
+	PADDING-TOP: 2px;
+	text-align:center 
+	/*BACKGROUND-COLOR: #D9D9D9	*/
+	}		
+	
+P
+{
+    FONT-FAMILY: 宋体;
+    FONT-SIZE: 9pt;
+    LINE-HEIGHT: 100%
+}
+.Ptitle
+{
+    FONT-FAMILY: 宋体;    	
+    FONT-SIZE: 10pt;
+    FONT-WEIGHT: bold
+}
+HR
+{
+    COLOR: black;	
+}
+.hrRow
+{    
+    BORDER-TOP: 1px;    
+    COLOR:black;
+}
+TH
+{
+    FONT-SIZE: 9pt;
+    LINE-HEIGHT: 150%;
+
+}
+LI
+{    
+    FONT-FAMILY: 宋体;
+    FONT-SIZE: 9pt;
+    LINE-HEIGHT: 150%
+    
+}
+
+ INPUT
+{
+    FONT-FAMILY: 宋体;
+    FONT-SIZE: 9pt;	
+}
+
+
+INPUT.input
+{
+    BACKGROUND-COLOR: #ffffff;
+    BORDER-STYLE:solid solid solid solid;
+    border-width:1px 1px 1px 1px;
+    border-color:#888888;
+    HEIGHT:18px;
+    LEFT: 0px;
+    TOP: 0px;
+    VERTICAL-ALIGN: center
+}
+
+SELECT
+{
+    FONT-FAMILY: 宋体;
+    FONT-SIZE: 9pt;
+    LINE-HEIGHT: 150%;
+    cursor:default;
+}
+
+TEXTAREA
+{
+    FONT-FAMILY: 宋体;
+    FONT-SIZE: 9pt;
+    LINE-HEIGHT: 150%;    
+	background-color: transparent;
+}
+OPTION
+{
+    FONT-FAMILY: 宋体;
+    FONT-SIZE: 9pt;
+    LINE-HEIGHT: 150%;
+ 
+}
+
+UL
+{
+    FONT-FAMILY: 宋体;
+    FONT-SIZE: 9pt;
+    LINE-HEIGHT: 150%
+}
+CAPTION
+{
+    FONT-FAMILY: 宋体;
+    FONT-SIZE: 9pt;
+    LINE-HEIGHT: 150%
+}
+TABLE
+{
+     FONT-SIZE: 9pt;
+     COLOR: #000000;
+     FONT-FAMILY: "宋体"; 
+     TEXT-DECORATION: none
+}
+TD
+{
+    FONT-SIZE: 9pt
+}
+
+.rowover
+{
+    BEHAVIOR: url(rowover.htc)
+}
+.sel
+{
+    FONT-FAMILY: 宋体;
+    FONT-SIZE: 9pt
+}
+
+.chbNoColor
+{
+    HEIGHT: 15px;
+    WIDTH: 15px
+}
+.chbColor
+{
+    HEIGHT: 15px;
+    WIDTH: 15px
+}
+.rbNoColor
+{
+	HEIGHT: 15px;
+	}
+.rbColor
+{
+	}
+
+.lbNoColor
+{
+	text-decoration: none;
+	
+	}
+.lbBgColor	
+{
+	FONT-FAMILY: 宋体;
+    FONT-SIZE: 12pt;	
+    font-weight:bold;
+    BACKGROUND: #Deebff;
+    /*BORDER-BOTTOM: black 1px solid;        */
+    /*BORDER-TOP: white 1px solid;  */
+    COLOR: #BF141A;
+    LINE-HEIGHT: 150%;
+    HEIGHT: 15px;
+	}	
+
+.lbForeColor
+{
+ font-size: 9pt;
+ line-height: 15pt; 
+ font-weight: normal; 
+ color: #000099; 
+ text-decoration: none;
+ HEIGHT: 15px;
+}
+
+.lbError
+{
+	color: #ff0000;
+	text-decoration: none;
+}
+.Title
+{
+	font-weight: bold;
+	color: #000000;
+	font-size :medium;	
+	}
+.btnLower
+{
+    BACKGROUND-COLOR: #B8DBD7;
+    BORDER-BOTTOM: #9999cc 2px inset;
+    BORDER-LEFT: #9999cc 2px inset;
+    BORDER-RIGHT: #9999cc 2px inset;
+    BORDER-TOP: #9999cc 2px inset
+}
+.btnRaise
+{
+    BACKGROUND-COLOR:#B8DBD7;    
+    COLOR: #0000a0;    
+    FONT-FAMILY: 宋体;
+    FONT-SIZE: 9pt;
+    HEIGHT: 24px;
+}
+.btnNone
+{
+	font-family:宋体,MS SONG,SimSun,tahoma,sans-serif;
+	font-size:10pt;
+	background: #ccd6eb;
+	border-bottom: 1px solid #ccd6eb;
+	border-right: 1px solid #ccd6eb;
+	border-left: 1px solid #ccd6eb;
+	border-top:1px solid #ccd6eb; 
+	color:#000066;
+	text-decoration:none;
+	cursor: hand
+}
+.btnCheckBox
+{
+	padding-left: 0px;
+	font-weight: normal;
+	font-size: 9pt;
+	padding-bottom: 0px;
+	margin: 0px;
+	border-top-style: none;
+	padding-top: 0px;
+	border-right-style: none;
+	border-left-style: none;
+	background-color: transparent;
+	text-align: left;
+	text-decoration: none;
+	border-bottom-style: none;
+}
+.btnBevel
+{
+    BACKGROUND-COLOR: #B8DBD7;
+    COLOR: #000080;
+    HEIGHT: 20px;
+    TOP: 1px;    
+    LINE-HEIGHT: 9pt;  
+    PADDING-LEFT: 1px;
+    PADDING-RIGHT: 1px;  
+    PADDING-TOP: 2px;
+    PADDING-BOTTOM: 2px;
+    CURSOR: hand;
+    BORDER-BOTTOM-STYLE: groove;
+    BORDER-LEFT-STYLE: groove;
+    BORDER-RIGHT-STYLE: groove;
+    BORDER-TOP-STYLE: groove; 
+}
+
+.btnSelect
+{
+	BACKGROUND-COLOR: #ccd6eb;
+    COLOR: #000080;
+    HEIGHT: 20px;
+    width : 20px;
+    CURSOR: hand;
+    BORDER-BOTTOM-STYLE: groove;
+    BORDER-LEFT-STYLE: groove;
+    BORDER-RIGHT-STYLE: groove;
+    BORDER-TOP-STYLE: groove; 
+}
+.btnForm {
+	font: 12px "宋体";
+	color: #043A62;
+	text-decoration: none;
+	border: none #666666;
+	background-image: url(../images/PAGES/from_02.gif);
+}
+.Bsbttn 
+{
+	font-family:宋体,MS SONG,SimSun,tahoma,sans-serif;
+	font-size:10pt;
+	background: #D6E7EF;
+	border-bottom: 1px solid #104A7B;
+	border-right: 1px solid #104A7B;
+	border-left: 1px solid #AFC4D5;
+	border-top:1px solid #AFC4D5; 
+	color:#000066;
+	text-decoration:none;
+	cursor: hand
+}
+
+.textbox {
+	BORDER-RIGHT: 1px solid; 
+	BORDER-TOP: 1px solid; 
+	BORDER-LEFT: 1px solid; 
+	BORDER-BOTTOM: 1px solid
+}
+
+.lbbox
+{
+	BORDER-BOTTOM:1px none; 
+	BORDER-LEFT:1px none;  
+	BORDER-RIGHT:1px none; 
+	BORDER-TOP:1px none;
+
+}
+	
+.trRow
+{
+    FONT-FAMILY: 宋体;
+    FONT-SIZE: 9pt;	 	 
+    BACKGROUND: Gray;
+    BORDER-BOTTOM: #708090 1cm solid;
+    LINE-HEIGHT: 150%
+}
+.tdCell
+{
+    FONT-FAMILY: 宋体;
+    FONT-SIZE: 9pt;	 	 
+    BACKGROUND: #EFF7FF;
+    BORDER-BOTTOM: #708090 1px groove;
+    LINE-HEIGHT: 150%
+}
+
+.tdLeft
+{
+    FONT-FAMILY: 宋体;
+    FONT-SIZE: 9pt;		
+    BACKGROUND: #E7F3F7;
+    BORDER-BOTTOM: #708090 1px groove;    
+    LINE-HEIGHT: 150%
+}
+.tdRight
+{
+    FONT-FAMILY: 宋体;
+    FONT-SIZE: 9pt;		
+    BACKGROUND: #CAF5FB;    
+    LINE-HEIGHT: 150%
+}
+.tdBottom
+{
+    FONT-FAMILY: 宋体;
+    FONT-SIZE: 9pt;		
+    BACKGROUND: #D6E7EF;      
+    BORDER-BOTTOM: black 1px solid;   
+    LINE-HEIGHT: 150%;
+    TEXT-ALIGN: right;
+}	
+.tbLower
+{	
+	background:white;
+	BORDER-BOTTOM: gray 2px solid; 
+	BORDER-LEFT: black 2px solid; 
+	BORDER-RIGHT: gray  2px solid; 
+	BORDER-TOP: black 2px solid
+	}
+.tableRaise
+{
+	FONT-SIZE: 9pt;
+    LINE-HEIGHT: 12pt;
+    BACKGROUND: #ebf3f5;
+    BORDER-BOTTOM: #30404f 3px solid;
+    BORDER-LEFT: #b8d2e9 3px solid;
+    BORDER-RIGHT: #30404f 3px solid;
+    BORDER-TOP: #b8d2e9 3px solid;    
+}
+.tableLower
+{
+	FONT-SIZE: 9pt;
+    LINE-HEIGHT: 12pt;
+    BACKGROUND: #fcf9eb;
+    BORDER-BOTTOM: #ec6b76 1px inset;
+    BORDER-LEFT: #ec6b76 1px inset;
+    BORDER-RIGHT: #ec6b76 1px inset;
+    BORDER-TOP: #ec6b76 1px inset;    
+	}
+.tableBevel
+{
+ FONT-SIZE: 9pt;
+ LINE-HEIGHT: 12pt;
+ BORDER-RIGHT: #eeeeee 1px solid; 
+ BORDER-TOP: #eeeeee 1px solid; 
+ BORDER-LEFT: #eeeeee 1px solid; 
+ BORDER-BOTTOM: #eeeeee 1px solid	
+	}	
+.tbTitleRaise
+{ 
+ BACKGROUND-COLOR: #6699CC;
+ COLOR: #ffe6ab;
+ FONT-FAMILY: 宋体;
+ FONT-SIZE: 10.5pt 
+	}
+.tbTitleLower
+{
+	}	
+.tbTitleNone
+{
+	}
+/*Table数据表格：用于显示查询结果集*/	
+.dbTable  /*表线*/
+  {
+	BORDER-RIGHT: #2c9096 1px solid;
+	BORDER-TOP: #2c9096 1px solid; 
+	MARGIN-TOP: 0px; 
+	BORDER-LEFT: #2c9096 1px solid; 
+	BORDER-BOTTOM: #2c9096 1px solid; 
+	BORDER-COLLAPSE: collapse; 
+	font-size:9pt;
+	}
+
+/*DataGrid数据表格：用于显示查询结果集，可排序和翻页-------Begin*/
+/*表线*/
+.dbGrid
+{
+	border-color:darkblue;
+	border-style:groove;
+	border-left-color:#7f99cc;	
+	border-top-color:#7f99cc;
+	border-Right-color:#7f99cc;
+	border-Bottom-color:#7f99cc;	
+	BORDER-RIGHT: #7f99cc 1px solid;
+	BORDER-TOP: #7f99cc 1px solid; 
+	MARGIN-TOP: 0px; 
+	BORDER-LEFT: #7f99cc 1px solid; 
+	BORDER-BOTTOM: #7f99cc 1px solid; 
+	BORDER-COLLAPSE: collapse; 	
+	}
+/*表头*/
+.dbGridHeader
+{
+	/*font-weight: bold; */	
+	FONT-SIZE: 9pt;
+    COLOR: #000000;	
+	/*color:#ffe6ab;*/
+	background-color:#B8DBD7;
+	/*BACKGROUND-COLOR: cornflowerblue;*/
+	/*border-style:groove;
+	border-color:#2c9096;
+	border-left-color:darkblue;	
+	border-top-color:darkblue;
+	border-Right-color:darkblue;
+	border-Bottom-color:darkblue; */
+
+    
+}
+/*表尾*/
+.dbGridFooter
+{
+    FONT-SIZE: 9pt;
+    BACKGROUND: #EDF6F1;
+    BORDER-BOTTOM: #999999 1px solid;	
+}
+/*表格*/
+.dbGridItems
+{	
+    background-color:lightwhite; 
+	/*color: #000000;*/
+	/*background-color: #deebff;*/
+}
+/*序号列*/
+.dbGridSNCell
+{
+	
+}
+/*选中的行*/
+.dbGridSelectEd
+{	
+
+}
+/*交替行*/
+.dbGridAlter
+{  
+	background-color:#E1F0E3; 
+	
+}
+/*图片按钮*/
+.DataQryImgbtn
+{
+	cursor: hand;
+	border: solid 1px #808080;
+	padding: 1px;
+	width: 18px;
+	height: 18px;
+	background: url(../Images/Button_Back.gif) center;
+}
+/*下啦匡*/
+.DataQryDropLst
+{
+    FONT-FAMILY: 宋体;
+    FONT-SIZE: 9pt;
+    LINE-HEIGHT: 100%;
+}
+/*主要标题*/
+.DataQrylbTitle
+{
+	font-weight: bold;
+	font-size: 22px;
+	/*color:#ffffce;*/
+	color: #000000;
+	FONT-FAMILY: 宋体;
+}
+/*福标题*/
+.DataQrylbTitleAdd
+{
+	font-size: 12px;
+	color: #000000;
+	FONT-FAMILY: 宋体;
+}
+/*左标题,右标题,纪录描述*/
+.DataQrylbMsg
+{
+	font-size: 12px;
+	color: #000000;
+}
+/*数据表格-----------------------------------------------------End*/	
+/*日历用的Css设置-----------Begin*/
+.DateCalbody      /*日历主体*/
+ {
+	/*BACKGROUND: #ffffff*/
+	}
+.DateCaltoday    /*日历今天*/
+{
+	font-weight:bold;
+	BACKGROUND: #6699cc
+	}
+.DateCalsatday   /*日历星期六列*/
+{
+	color:red
+	}
+.DateCalsunday   /*日历星期日列*/
+{
+	color:red
+	}
+.DateCalsdays   /*日历日子*/
+ {
+	BACKGROUND: gray;
+	}
+ .DateCalselect  /*选中的日子*/
+ {
+	font-weight:bold;
+	BACKGROUND: gray;
+	}
+/*日历用的Css设置-----------End*/
+.TxtBevel
+{
+    BORDER-BOTTOM: black 1pt solid;
+    BORDER-LEFT: black 1pt solid;
+    BORDER-RIGHT: black 1pt solid;
+    BORDER-TOP: black 1pt solid;
+    FONT-FAMILY: 宋体;
+    FONT-SIZE: 9pt;
+    MARGIN: 0pt;
+    PADDING-BOTTOM: 1pt;
+    PADDING-LEFT: 1pt;
+    PADDING-RIGHT: 1pt;
+    PADDING-TOP: 1pt;
+    HEIGHT: 20PX	
+	}
+.TxtRaise
+{
+	BORDER-BOTTOM-WIDTH: 1px;
+    BORDER-LEFT-WIDTH: 1px;
+    BORDER-RIGHT-WIDTH: 1px;
+    BORDER-TOP-WIDTH: 1px;
+    FONT-SIZE: 9pt;
+    LINE-HEIGHT: 11pt
+	}
+.TxtLower
+{    
+    BORDER-BOTTOM: #9999cc 2px inset;
+    BORDER-LEFT: #9999cc 2px inset;
+    BORDER-RIGHT: #9999cc 2px inset;
+    BORDER-TOP: #9999cc 2px inset	
+	}	
+.TxtNone
+{
+    BORDER-BOTTOM: medium none;
+    BORDER-LEFT: medium none;
+    BORDER-RIGHT: medium none;
+    BORDER-TOP: medium none;	
+	}	
+.LstBevel
+{
+	border-top:solid black 1px;
+	border-bottom:solid white 1px;
+	border-right:solid white 1px;
+	border-Left:solid black 1px;
+	OVERFLOW:auto
+}
+
+.LstNone
+{ 
+ BORDER-BOTTOM-STYLE: none; 
+ BORDER-LEFT-STYLE: none; 
+ BORDER-RIGHT-STYLE: none;
+ BORDER-TOP-STYLE: none; 
+ OVERFLOW: auto;	
+}
+
+.LstRaise
+{    
+    COLOR: #0000a0;
+    FONT-FAMILY: 宋体;
+    FONT-SIZE: 9pt;
+    OVERFLOW: auto;	
+}
+.LstLower
+{
+    BORDER-BOTTOM: #9999cc 2px inset;
+    BORDER-LEFT: #9999cc 2px inset;
+    BORDER-RIGHT: #9999cc 2px inset;
+    BORDER-TOP: #9999cc 2px inset		
+	}
+
+.aa
+{	
+   color:#ffffff; text-decoration: none
+}
+	
+A:link
+{
+	color: #333333;
+	text-decoration: none;
+}
+
+A:visited
+{
+	color: #333333;
+	text-decoration: none;
+}
+
+A:active
+{
+	color: #333333;
+	text-decoration: none;
+}
+
+A:hover
+{		
+	font-family: "宋体";
+	font-size: 12px;
+	color: #660000;
+	text-decoration: none;	
+}   
+TABLE.clsNavLinks A:hover
+{
+    TEXT-DECORATION: none
+}
+TABLE.clsNavLinks
+{
+    CLEAR: both
+}
+.TrOdd
+{
+	font-family: "宋体";
+	font-size: 9pt;
+	line-height: 20px;	
+    FONT-SIZE: 9pt;
+    BACKGROUND-COLOR: #d7ecfa
+}
+.bz {
+	font-family: "宋体";
+	font-size: 9pt;
+	line-height: 20px;
+}
+
+TD.t03
+{
+    BORDER-LEFT: medium none;
+    BORDER-TOP: medium none
+}
+
+table.tb01
+{
+    BORDER-BOTTOM: medium none;
+    BORDER-RIGHT: medium none
+}
+.dbGrpHeader
+{
+	font-weight: bold; 
+	color: #000000; 
+	FONT-SIZE: 9pt;    		
+	background-color:#B8DBD7;
+}
+.tdGrpRight
+{
+	/*border-right-color:#000000;*/
+	border-right-style:solid;
+	border-right-width:thin;
+}
+
+.dbGrpTable
+{
+	border-Bottom-style:solid;
+	border-Bottom-width:thin;	
+	TABLE-LAYOUT:fixed;  			
+}
+
+.DivLabel
+{
+	width:100%;
+	height:100%;
+	position: relative; 
+	top:4px;
+}
+.DivNormal
+{
+	width : 100%;
+	text-align : center;
+}
+.btnForm {
+	font: 12px "宋体";
+	color: #043A62;
+	text-decoration: none;
+	border: none #666666;
+	background-image: url(../images/PAGES/from_02.gif);
+}
+
+.litbtn {
+	border: none;
+	font-family: "宋体";
+	font-size: 18px;
+	text-decoration: none;
+	background-color: #FFFFFF;
+}
+.txtUnderline
+{
+	font-weight: normal;
+	font-size: 9pt;
+	vertical-align: bottom;
+	text-transform: none;
+	width: 100%;
+	color: #006600;
+	border-top-style: none;
+	border-bottom: gray 1px solid;
+	font-family: 宋体;
+	border-right-style: none;
+	border-left-style: none;
+	background-color: transparent;
+	text-align: center;
+	text-decoration: none;
+}
+.bgcolor1{
+	background-color:#FFFFFF;　　
+}
+.bgcolor2{
+	background-color:#85C144;　　/*（左背景中绿色）*/
+}
+.bgcolor3{
+	background-color:#E2FFCB;　　/*（上背景浅绿色）*/
+}
+.bgcolor4{
+	background-color:#F3F8FC;　　/*（表格广告条浅蓝色）*/
+}
+.bgcolor5{
+	background-color:#DFDFD0;
+}
+.bgcolor6{
+	background-color:#EDFCE1;    /*（左表格背景浅绿色）*/
+}
+.bgcolor7{
+	background-color:#517A26;　　/*（左表格阴影浅绿色）*/
+}
+.TabLog
+{
+	padding-right: 0px;
+	padding-left: 0px;
+	padding-bottom: 0px;
+	padding-top: 0px;
+	margin: 0px;
+	width: 100%;
+	border-top-style: none;
+	padding-top: 0px;
+	border-right-style: none;
+	border-left-style: none;
+	background-color: transparent;
+	border-bottom-style: none;
+}
+
+.btnCheckBox
+{
+	padding-left: 0px;
+	font-weight: normal;
+	font-size: 9pt;
+	padding-bottom: 0px;
+	margin: 0px;
+	border-top-style: none;
+	padding-top: 0px;
+	border-right-style: none;
+	border-left-style: none;
+	background-color: transparent;
+	text-align: left;
+	text-decoration: none;
+	border-bottom-style: none;
+}
+
+.btnForm
+{
+	border-right: #cccccc 1px solid;
+	border-top: #cccccc 1px solid;
+	font-size: 9pt;
+	vertical-align: baseline;
+	border-left: #cccccc 1px solid;
+	color: #043a62;
+	line-height: normal;
+	border-bottom: #cccccc 1px solid;
+	font-family: verdana, arial, 'sans serif' , 宋体;
+	background-color: #ffffff;
+	text-align: center;
+	text-decoration: none;
+}
+
+.btnDeSelect
+{
+	background-position: center center;
+	background-attachment: fixed;
+	background-image: url(../../DMIS/Images/deSelect.gif);
+	width: 20px;
+	background-repeat: no-repeat;
+	height: 20px;
+}
+
+.btnSelectAll
+{
+	background-position: center center;
+	background-attachment: fixed;
+	background-image: url(../../DMIS/Images/selectAll.gif);
+	width: 20px;
+	background-repeat: no-repeat;
+	height: 20px;
+}
+
+.btnSelect
+{
+	background-position: center center;
+	background-attachment: fixed;
+	background-image: url(../../DMIS/Images/select.gif);
+	width: 20px;
+	background-repeat: no-repeat;
+	height: 20px;
+}
+
+.txaStd
+{
+	width: 99.5%;
+	background-color: transparent;
+}
+
+.TxtCol3
+{
+	width: 99.5%;
+	border-top-style: none;
+	border-bottom: 1px solid;
+	border-right-style: none;
+	border-left-style: none;
+	background-color: transparent;
+}
+.txtStd
+{
+	width: 120px;
+	background-color: transparent;
+}
+.txtDate
+{
+	width: 100px;
+	border-top-style: none;
+	border-bottom: 1px solid;
+	border-right-style: none;
+	border-left-style: none;
+	background-color: transparent;
+}
+.title2 {
+	text-decoration: none;
+	border: 1px solid #09453E;
+}
+.button2 {
+	font-family: "宋体";
+	font-size: 12px;
+	color: #09453E;
+	text-decoration: none;
+	filter: DropShadow(Color=#cccccc, OffX=1, OffY=1);
+	border: 1px solid #09453E;
+	background-color: #F0F0F0;
+}
+.form {
+	font: 12px "宋体";
+	color: #09453E;
+	text-decoration: none;
+	border: 1px none #666666;
+}
+.form2 {
+	font: normal 12px "宋体";
+	color: #333333;
+	text-decoration: none;
+	border-top: 1px none #999999;
+	border-right: 1px none #999999;
+	border-bottom: 1px dashed #999999;
+	border-left: 1px none #999999;
+	filter: DropShadow(Color=#C8C8C8, OffX=1, OffY=1);
+}
+.form3 {
+	font: bold 12px "宋体";
+	color: #000000;
+	text-decoration: none;
+	filter: DropShadow(Color=#cccccc, OffX=1, OffY=1);
+	border: 1px none #999999;
+}
+.title {
+	text-decoration: none;
+	line-height: 20px;
+	font-family: "宋体";
+	font-size: 12px;
+	color: #333333;
+	border: none;
+	font-weight: normal;
+}
+.button {
+	font: 12px "宋体";
+	color: #09453E;
+	text-decoration: none;
+	border: 0px none;
+	background-image: url(images/from_10.gif);
+}
+.from {
+	font: 12px "宋体";
+	color: #333333;
+	text-decoration: none;
+	border-top: none;
+	border-right: none;
+	border-bottom: 1px dashed #333333;
+	border-left: none;
+}
+
+.tblGrid{
+	border-right: #000000 1px solid;
+	border-bottom: #000000 1px solid;
+	font-size: 9pt;
+	font-family: 宋体, Arial, 'Courier New';
+}
+.tblGrid td, .tblGrid th{
+	border-left: 1px solid #000000;
+	border-top: 1px solid #000000;
+}
+
+.tblGridSH{
+	border-right: #000000 1px solid;
+	border-bottom: #000000 1px solid;
+	font-size: 9pt;
+	font-family: 宋体, Arial, 'Courier New';
+}
+.tblGridSHtd{
+	border-left: 1px solid #000000;
+	border-top: 1px solid #000000;
+}
+.tblGridSHtd2
+{
+	border-top:0px solid #ffffff;
+	border-left: 1px solid #000000;
+}
+
+
+
+
+
+
+
+<!-- update  -->
+th {
+	font-family: 宋体;
+	font-size: 12px;
+}
+.font1 {
+	font-family: "宋体";
+	font-size: 12px;
+	color: #004222;
+	text-decoration: none;
+}
+.font2 {
+	font-family: "宋体";
+	font-size: 12px;
+	color: #EAFAF4;
+	text-decoration: none;
+	filter: DropShadow(Color=#056238, OffX=1, OffY=1);
+}
+.font3 {
+	font-family: "宋体";
+	font-size: 12px;
+	color: #055A34;
+	filter: DropShadow(Color=#C0D4CB, OffX=1, OffY=1);
+	text-decoration: none;
+	line-height: 20px;
+	font-weight: bold;
+}
+.font4 {
+	font-family: "宋体";
+	font-size: 12px;
+	color: #FFFFFF;
+	text-decoration: none;
+	border-top-width: 3px;
+	border-right-width: 3px;
+	border-bottom-width: 3px;
+	border-left-width: 3px;
+	border-top-style: none;
+	border-right-style: none;
+	border-bottom-style: double;
+	border-left-style: none;
+	border-top-color: #FFFFFF;
+	border-right-color: #FFFFFF;
+	border-bottom-color: #FFFFFF;
+	border-left-color: #FFFFFF;
+
+}
+.font5 {
+	font-family: "宋体";
+	font-size: 12px;
+	color: red;
+	filter: DropShadow(Color=#C0D4CB, OffX=1, OffY=1);
+	text-decoration: none;
+	line-height: 20px;
+	font-weight: bold;
+}
+.title1 {
+	background-image: url(../Images/index_14.png);
+	font-family: "宋体";
+	font-size: 12px;
+	line-height: 20px;
+	text-decoration: none;
+}
+.title2 {
+	font-family: "宋体";
+	font-size: 12px;
+	color: #09281D;
+	text-decoration: none;
+	border: 1px solid #0E432F;
+	background-color: #FFFFFF;
+}
+a:hover {
+	font-family: "宋体";
+	font-size: 12px;
+	color: #660000;
+	text-decoration: none;
+}
+a:link {
+	font-family: "宋体";
+	font-size: 12px;
+	text-decoration: none;
+	color: #145F43;
+}
+.title3 {
+	font-family: "宋体";
+	font-size: 12px;
+	line-height: 20px;
+	color: #333333;
+	text-decoration: none;
+	background-image: url(../Images/index_38.png);
+}
+.button1 {
+	background-image: url(../Images/button1.png);
+	border: 1px solid #03361F;
+	font-family: "宋体";
+	font-size: 12px;
+	color: #03361F;
+	text-decoration: none;
+	height: 20px;
+	cursor: hand;
+}
+.button2 {
+	background-image: url(../Images/button2.png);
+	font-family: "宋体";
+	font-size: 12px;
+	color: #03361F;
+	text-decoration: none;
+	border: 1px dashed #056238;
+	height: 20px;
+}
+.button31 {
+	font-family: "宋体";
+	font-size: 12px;
+	color: #03361F;
+	text-decoration: none;
+	border-top: 1px none #056238;
+	border-right: 1px none #056238;
+	border-bottom: 1px dashed #056238;
+	border-left: 1px none #056238;
+}
+.button4 {
+	font-family: "宋体";
+	font-size: 12px;
+	color: #03361F;
+	text-decoration: none;
+	border:1px solid #056238;
+}
+
+
+
+.hand 
+{
+	cursor: hand;	
+}

@@ -1,0 +1,203 @@
+BODY {
+	FONT-FAMILY: "宋体"; FONT-SIZE: 12px; LINE-HEIGHT: 18px; MARGIN: 0px
+}
+BODY {
+	SCROLLBAR-3DLIGHT-COLOR: #52B4B1;SCROLLBAR-ARROW-COLOR: #FFFFFF; SCROLLBAR-DARKSHADOW-COLOR: #52B4B1; SCROLLBAR-BASE-COLOR: #52B4B1       /*#52B4B1;蓝色  #52B4B1;绿色 */
+}
+FONT {
+	FONT-FAMILY: "宋体"; FONT-SIZE: 12px; LINE-HEIGHT: 18px
+}
+.smallFont {
+	FONT-FAMILY: "宋体"; FONT-SIZE: 12px; LINE-HEIGHT: 18px
+}
+.middleFont {
+	FONT-FAMILY: "宋体"; FONT-SIZE: 14px; LINE-HEIGHT: 20px
+}
+.bigFont {
+	FONT-FAMILY: "宋体"; FONT-SIZE: 16px; LINE-HEIGHT: 22px
+}
+A {
+	COLOR: black; FONT-FAMILY: "宋体"; FONT-SIZE: 12px; LINE-HEIGHT: 18px; text-decoration: none;
+}
+A:active {
+	COLOR: black; FONT-FAMILY: "宋体"; FONT-SIZE: 12px; LINE-HEIGHT: 18px; text-decoration: none;}
+A:visited {
+	COLOR: black; FONT-FAMILY: "宋体"; FONT-SIZE: 12px; LINE-HEIGHT: 18px; text-decoration: none;}
+A:hover {
+	COLOR: red; FONT-FAMILY: "宋体"; FONT-SIZE: 12px; LINE-HEIGHT: 18px; text-decoration: none;}
+.SpecialA:hover {
+	COLOR: red; FONT-FAMILY: "宋体"; FONT-SIZE: 12px; LINE-HEIGHT: 18px; TEXT-DECORATION: none
+}
+TABLE {
+	word-break:break-all; 
+	word-wrap:break-word; 
+	FONT-FAMILY: "宋体"; 
+	FONT-SIZE: 12px;
+	LINE-HEIGHT: 18px;
+	border:#52B4B1 solid;
+	border-width:1 0 0 1
+}
+TR{
+	background-color:expression("#FFFFFF","#EEEEEE".split(",")[rowIndex%2])
+}
+TD {
+	FONT-FAMILY: "宋体"; FONT-SIZE: 12px; LINE-HEIGHT: 18px;
+	border:#52B4B1 solid;border-width:0 1 1 0;
+}
+thead td	{
+background: buttonface; font: menu; border: 1px outset white;
+			 cursor: default; padding-top: 0; padding: bottom: 0;
+			 border-top: 1px solid buttonhighlight;
+			 border-left: 1px solid buttonhighlight;
+			 border-right: 1px solid buttonshadow;
+			 border-bottom: 1px solid buttonshadow;
+			 height: 20px;
+			 }
+thead .arrow		{font-family: webdings; color: black; padding: 0; font-size: 10px;
+			height: 15px; width: 10px; overflow: hidden;
+			margin-bottom: 2; margin-top: -3; padding: 0; padding-top: 0; padding-bottom: 2;}
+TH {
+	background-image:url(../images/TableDefault/001.png);
+	FONT-FAMILY: "宋体"; FONT-SIZE: 12px; LINE-HEIGHT: 18px;
+	border:#52B4B1 solid;border-width:0 1 1 0;
+	COLOR: #ffffff;
+
+}
+.navigation{
+
+	background-image:url(../images/TableDefault/002.png);
+	FONT-FAMILY: "宋体"; FONT-SIZE: 12px; LINE-HEIGHT: 18px;
+	border:#52B4B1 solid;border-width:0 1 1 0;
+}
+.tr_header{
+COLOR: #000000; FONT-WEIGHT: bold;
+background-color:#52B4B1;
+}
+.tr_no {
+		BACKGROUND: buttonface;
+}
+
+
+.CATitle2 ul {
+	margin: 0;
+	padding: 0;
+}
+.CATitle2 li {
+	display: inline;
+	margin: 0;
+	padding: 0 2px;
+	list-style-type: none;
+}
+.CATitle2 li a {
+BORDER-RIGHT: buttonshadow 1px solid;
+BORDER-TOP: buttonhighlight 1px solid;
+BORDER-LEFT: buttonhighlight 1px solid;
+BORDER-BOTTOM: buttonshadow 1px solid;
+BACKGROUND: buttonface;
+FONT: menu;
+CURSOR: default;
+PADDING-TOP: 0px;
+HEIGHT: 16px;
+}
+.CATitle2 li a:hover {
+BORDER-RIGHT: #9BAFFF 1px solid; PADDING-RIGHT: 2px; BORDER-TOP: 
+            #9BAFFF 1px solid; PADDING-LEFT: 0px; FONT-SIZE: 12px; FILTER: 
+            progid:DXImageTransform.Microsoft.Gradient(GradientType=0, 
+            StartColorStr=#ffffff, EndColorStr=#9BAFFF); BORDER-LEFT: #9BAFFF 
+            1px solid; CURSOR: hand; COLOR: black; PADDING-TOP: 2px; 
+            BORDER-BOTTOM: #9BAFFF 1px solid
+}
+.CATitle2 li a:active {
+             BORDER-RIGHT: #9BAFFF 1px solid; PADDING-RIGHT: 2px; BORDER-TOP: 
+            #9BAFFF 1px solid; PADDING-LEFT: 0px; FONT-SIZE: 12px; FILTER: 
+            progid:DXImageTransform.Microsoft.Gradient(GradientType=0, 
+            StartColorStr=#ffffff, EndColorStr=#9BAFFF); BORDER-LEFT: #9BAFFF 
+            1px solid; CURSOR: hand; COLOR: black; PADDING-TOP: 2px; 
+            BORDER-BOTTOM: #9BAFFF 1px solid
+}
+.CATitle2 li a:link {
+             BORDER-RIGHT: #9BAFFF 1px solid; PADDING-RIGHT: 2px; BORDER-TOP: 
+            #9BAFFF 1px solid; PADDING-LEFT: 0px; FONT-SIZE: 12px; FILTER: 
+            progid:DXImageTransform.Microsoft.Gradient(GradientType=0, 
+            StartColorStr=#ffffff, EndColorStr=#9BAFFF); BORDER-LEFT: #9BAFFF 
+            1px solid; CURSOR: hand; COLOR: black; PADDING-TOP: 2px; 
+            BORDER-BOTTOM: #9BAFFF 1px solid
+}
+
+.CATitle2 li a:visited {
+             BORDER-RIGHT: #9BAFFF 1px solid; PADDING-RIGHT: 2px; BORDER-TOP: 
+            #9BAFFF 1px solid; PADDING-LEFT: 0px; FONT-SIZE: 12px; FILTER: 
+            progid:DXImageTransform.Microsoft.Gradient(GradientType=0, 
+            StartColorStr=#ffffff, EndColorStr=#9BAFFF); BORDER-LEFT: #9BAFFF 
+            1px solid; CURSOR: hand; COLOR: black; PADDING-TOP: 2px; 
+            BORDER-BOTTOM: #9BAFFF 1px solid
+}
+
+
+.btn1_mouseout {
+             BORDER-RIGHT: #9BAFFF 1px solid; PADDING-RIGHT: 2px; BORDER-TOP: 
+            #9BAFFF 1px solid; PADDING-LEFT: 0px; FONT-SIZE: 12px; FILTER: 
+            progid:DXImageTransform.Microsoft.Gradient(GradientType=0, 
+            StartColorStr=#ffffff, EndColorStr=#9BAFFF); BORDER-LEFT: #9BAFFF 
+            1px solid; CURSOR: hand; COLOR: black; PADDING-TOP: 2px; 
+            BORDER-BOTTOM: #9BAFFF 1px solid
+            } 
+.btn1_mouseover {
+             BORDER-RIGHT: #9BAFFF 1px solid; PADDING-RIGHT: 2px; BORDER-TOP: 
+            #9BAFFF 1px solid; PADDING-LEFT: 0px; FONT-SIZE: 12px; FILTER: 
+            progid:DXImageTransform.Microsoft.Gradient(GradientType=0, 
+            StartColorStr=#ffffff, EndColorStr=#9BAFFF); BORDER-LEFT: #9BAFFF 
+            1px solid; CURSOR: hand; COLOR: black; PADDING-TOP: 2px; 
+            BORDER-BOTTOM: #9BAFFF 1px solid
+            } 
+.TableStrOut{
+	    white-space: nowrap;
+	    text-overflow:ellipsis;
+	    overflow:hidden;
+            width:130px;
+    }
+.TableList{
+	    border-collapse: collapse;
+	    table-layout: fixed;
+    }
+.group_header {
+     BACKGROUND-COLOR: #F3F3F3;BORDER-LEFT: #52b4b1 1px solid;BORDER-RIGHT: #52b4b1 1px solid; BORDER-TOP: #52b4b1 1px solid;HEIGHT: 22px;
+}  
+.ctr_disabled {
+	font-family: "宋体";
+	font-size: 12px;
+	font-style: normal;
+	color: black;
+	text-decoration: none;
+	background-color: #E2E4DA;
+	border: 1px solid #999999;
+}
+.div_tree{
+	overflow-x:hidden;overflow-y:scroll;overflow-x:scroll;
+}
+.resizeDivClass
+{
+position:relative;
+background-color:green;
+width:1;
+HEIGHT:20px;
+z-index:1;
+left:expression(this.parentElement.offsetWidth-3);
+cursor:e-resize;
+
+}
+
+.labPrompt
+{
+	color:red;
+}
+
+.scrollUl
+{
+	border-bottom:1px solid #CCC;overflow:hidden;height:25px;
+	padding-left:0px;
+	margin-left:0px;
+}
+.scrollUl li{float:left;} 
+.sd01{cursor:pointer;border:1px solid #CCC;background:#FFF;margin:5px;padding:2px;font-weight:bold;} 
+.sd02{cursor:pointer;border:0px solid #CCC;margin:5px;padding:2px;} 

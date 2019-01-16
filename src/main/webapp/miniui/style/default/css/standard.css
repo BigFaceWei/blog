@@ -1,0 +1,24 @@
+HTML {
+    /*SCROLLBAR-HIGHLIGHT-COLOR: #FFFFFF; 滚动条及箭头的亮边色*/
+    /*SCROLLBAR-SHADOW-COLOR: #E1E1E1;    滚动条及箭头的暗边色*/
+    SCROLLBAR-3DLIGHT-COLOR: #99bbe8;   /*滚动条及箭头的3D亮边色*/
+    /*SCROLLBAR-TRACK-COLOR: #E1EDFD;     滚动条底色*/
+    SCROLLBAR-DARKSHADOW-COLOR:#99bbe8; /*滚动条及箭头的暗边阴影色*/
+    SCROLLBAR-BASE-COLOR: #bcd2ef;      /*滚动条的基本颜色*/
+    SCROLLBAR-ARROW-COLOR: #000000;     /*箭头的颜色*/
+    /*SCROLLBAR-FACE-COLOR: #4169E1;      滚动条及箭头的颜色*/
+  
+    FONT-SIZE: 9pt;
+    FONT-FAMILY: verdana,arial,sans serif; 
+
+    CURSOR: default; 
+
+    BACKGROUND-COLOR: #ffffff;
+    BACKGROUND-REPEAT: repeat;
+    BACKGROUND-ATTACHMENT: fixed; 
+    
+    TOPMARGIN:0;
+    LEFTMARGIN:0;
+    MARGINHEIGHT:0;
+    MARGINWIDTH:0;
+}

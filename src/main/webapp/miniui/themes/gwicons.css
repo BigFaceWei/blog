@@ -1,0 +1,325 @@
+.icon-addbak{
+	background:url(gwicons/add.gif) no-repeat;
+}
+.icon-slaveadd{
+	display:block;
+	background:url(gwicons/add.gif) center center no-repeat;
+	width:16px;
+	height:16px;
+	center:center;
+	margin:auto;
+}
+.icon-nwbutton{
+	background-color:rgb(0,115,153);
+}
+.icon-addnew{
+	background:url(gwicons/addnew.gif) no-repeat;
+}
+.icon-edit{
+	background:url(gwicons/edit.gif) no-repeat;
+}
+.icon-remove{
+	background:url(gwicons/remove-w.png) no-repeat;
+}
+body .mini-button-pressed .gwicon-remove, body a:hover.mini-button-pressed .gwicon-remove
+{
+        background:url(gwicons/remove-g.png) no-repeat;
+}
+.icon-slaveremove{
+	display:block;
+	background:url(gwicons/remove.gif) no-repeat;
+	width:16px;
+	height:16px;
+	center:center;
+	margin:auto;
+}
+.icon-savebak{
+	background:url(gwicons/save.gif) no-repeat;
+}
+
+.icon-close{
+	background:url(gwicons/closed-w.png) no-repeat;
+}
+body .mini-button-pressed .icon-close, body a:hover.mini-button-pressed .icon-close
+{
+        background:url(gwicons/closed-g.png) no-repeat;
+}
+.icon-cut{
+	background:url(gwicons/cut.png) no-repeat;
+}
+.icon-ok{
+	background:url(gwicons/ok.png) no-repeat;
+}
+.icon-no{
+	background:url(gwicons/no.png) no-repeat;
+}
+.icon-cancel{
+	background:url(gwicons/cancel-w.png);
+}
+body .mini-button-pressed .icon-cancel, body a:hover.mini-button-pressed .icon-cancel
+{
+        background:url(gwicons/cancel-g.png) no-repeat;
+}
+
+.icon-reload{
+	background:url(gwicons/reload-w.png) no-repeat;
+}
+body .mini-button-pressed .icon-reload, body a:hover.mini-button-pressed .icon-reload
+{
+        background:url(gwicons/reload-g.png) no-repeat;
+}
+.icon-search{
+	background:url(gwicons/search-w.png) no-repeat;
+}
+body .mini-button-pressed .icon-search, body a:hover.mini-button-pressed .icon-search
+{
+        background:url(gwicons/search-g.png) no-repeat;
+}
+.icon-save{
+    background:url(gwicons/save-w.png) no-repeat;
+}
+body .mini-button-pressed .icon-save, body a:hover.mini-button-pressed .icon-save
+{
+        background:url(gwicons/save-g.png) no-repeat;
+}
+.icon-add{
+	background:url(gwicons/add-w.png) no-repeat ;
+}
+body .mini-button-pressed .icon-add, body a:hover.mini-button-pressed .icon-add
+{
+        background:url(gwicons/add-g.png) no-repeat ;
+}
+
+.icon-report{
+	background:url(gwicons/eompreport.jpg) no-repeat #007399;
+}
+
+.icon-delete{
+	background:url(gwicons/remove-w.png) no-repeat ;
+}
+body .mini-button-pressed .icon-delete, body a:hover.mini-button-pressed .icon-delete
+{
+        background:url(gwicons/remove-g.png) no-repeat ;
+}
+
+.icon-eompoperation{
+	background:url(gwicons/eompoperation.jpg) no-repeat #007399;
+}
+.icon-back{
+	background:url(gwicons/eompback.jpg) no-repeat #007399;
+}
+.icon-seeworkflow{
+	background:url(gwicons/seeworkflow.jpg) no-repeat #007399;
+}
+.icon-eompsearch{
+    background:url(gwicons/eompsearch.jpg) no-repeat #43b92f;
+}
+.icon-eompclear{
+    background:url(gwicons/eompclear.jpg) no-repeat #b9a930;
+}
+.icon-offset{
+    background:url(gwicons/offset.jpg) no-repeat ;
+}
+.icon-flow-path{
+    background:url(gwicons/flow-path.gif) no-repeat ;
+}
+.icon-backczp{
+    background:url(gwicons/back.gif) no-repeat ;
+}
+.icon-download{
+    background:url(gwicons/download.gif) no-repeat ;
+}
+
+.icon-collapse-all{
+    background:url(gwicons/collapse-all.gif) no-repeat ;
+}
+.icon-pw-rzx{
+    background:url(gwicons/collapse-all.png) no-repeat ;
+}
+.icon-pw-hx{
+    background:url(gwicons/hexu.png) no-repeat ;
+}
+.icon-pw-ygl{
+    background:url(gwicons/ygl.png) no-repeat ;
+}
+.icon-pw-fh{
+    background:url(gwicons/fhzb.png) no-repeat ;
+}
+.icon-pw-allow{
+    background:url(gwicons/allowall.png) no-repeat ;
+}
+.icon-pw-cl{
+    background:url(gwicons/solve.png) no-repeat ;
+}
+.icon-pw-solves{
+    background:url(gwicons/solvesingle.png) no-repeat ;
+}
+.icon-pw-rzxs{
+    background:url(gwicons/rzxs.png) no-repeat ;
+}
+.icon-jump{
+    background:url(gwicons/tiaozhuan.png) no-repeat;
+}
+.icon-worksave{
+    background:url(gwicons/save.png) no-repeat;
+}
+.icon-kill{
+    background:url(gwicons/delete.png) no-repeat;
+}
+.icon-send{
+    background:url(gwicons/send.png) no-repeat;
+}
+.icon-opinion{
+    background:url(gwicons/shenpiyijian.png) no-repeat;
+}
+.icon-stepUser{
+    background:url(gwicons/user.png) no-repeat;
+}
+.icon-notify{
+    background:url(gwicons/notice.png) no-repeat;
+}
+.icon-telphone{
+    background:url(gwicons/telphone.png) no-repeat;
+}
+.icon-xchb{
+    background:url(gwicons/xchb.png) no-repeat #007399;
+}
+
+.icon-print{
+	background:url(gwicons/print-w.png) no-repeat;
+}
+body .mini-button-pressed .icon-print, body a:hover.mini-button-pressed .icon-print
+{
+        background:url(gwicons/print-g.png) no-repeat ;
+}
+.icon-help{
+	background:url(gwicons/help.gif) no-repeat;
+	
+}
+.icon-undo{
+	background:url(gwicons/undo.gif) no-repeat;
+}
+.icon-redo{
+	background:url(gwicons/redo-w.png) no-repeat;
+}
+body .mini-button-pressed .icon-redo, body a:hover.mini-button-pressed .icon-redo
+{
+        background:url(gwicons/redo-g.png) no-repeat ;
+}
+.icon-tip{
+	background:url(gwicons/tip.png) no-repeat;
+}
+.icon-zoomin{
+	background:url(gwicons/zoomin.gif) no-repeat;
+}
+.icon-zoomout{
+	background:url(gwicons/zoomout.gif) no-repeat;
+}
+.icon-goto{
+	background:url(gwicons/goto.gif) no-repeat;
+}
+.icon-date{
+	background:url(gwicons/date.gif) no-repeat;
+}
+.icon-filter{
+	background:url(gwicons/filter.gif) no-repeat;
+}
+.icon-find{
+	background:url(gwicons/find.png) no-repeat;
+}
+.icon-folder{
+	background:url(gwicons/folder.gif) no-repeat #2196fc;
+}
+.icon-folderopen{
+	background:url(gwicons/folder-open.gif) no-repeat;
+}
+.icon-lock{
+	background:url(gwicons/lock.png) no-repeat;
+}
+.icon-unlock{
+	background:url(gwicons/unlock.gif) no-repeat;
+}
+.icon-new{
+	background:url(gwicons/new-w.png) no-repeat;
+}
+body .mini-button-pressed .icon-new, body a:hover.mini-button-pressed .icon-new
+{
+        background:url(gwicons/new-g.png) no-repeat ;
+}
+.icon-node{
+	background:url(gwicons/node.png) no-repeat;
+}
+.icon-nowait{
+	background:url(gwicons/nowait.gif) no-repeat;
+}
+.icon-sort{
+	background:url(gwicons/sort.gif) no-repeat;
+}
+.icon-wait{
+	background:url(gwicons/wait.gif) no-repeat;
+}
+.icon-upgrade{
+	background:url(gwicons/upgrade-w.png) no-repeat;
+}
+body .mini-button-pressed .icon-upgrade, body a:hover.mini-button-pressed .icon-upgrade
+{
+        background:url(gwicons/upgrade-g.png) no-repeat ;
+}
+.icon-downgrade{
+	background:url(gwicons/downgrade.gif) no-repeat;
+}
+.icon-download{
+	background:url(gwicons/download.gif) no-repeat;
+}
+.icon-upload{
+	background:url(gwicons/upload.gif) no-repeat;
+}
+.icon-user{
+	background:url(gwicons/user.png) no-repeat;
+}
+.icon-split{
+	background:url(gwicons/split.gif) no-repeat;
+}
+.icon-addfolder{
+	background:url(gwicons/addfolder.gif) no-repeat;
+}
+
+.icon-expand{
+	background:url(gwicons/expand.gif) no-repeat;
+}
+.icon-collapse{
+	background:url(gwicons/collapse.gif) no-repeat;
+}
+.icon-collapsebutton{
+	background:url(gwicons/collapsebutton.gif) no-repeat;
+}
+.icon-goto{
+	background:url(gwicons/goto.gif) no-repeat;
+}
+/*显示设置*/
+.icon-noimage{
+	background:url(gwicons/noimage-w.png) no-repeat ;
+}
+body .mini-button-pressed .icon-noimage, body a:hover.mini-button-pressed .icon-noimage
+{
+        background:url(gwicons/noimage-g.png) no-repeat ;
+}
+.icon_lightOn {
+	background-image: url(/TBPWeb/miniui/themes/gwicons/lightOn.gif);
+	background-repeat: no-repeat;
+	
+}
+.icon_lightOn1 {
+	background-image: url(/TBPWeb/miniui/themes/gwicons/light.gif);
+	background-repeat: no-repeat;
+	
+}
+.icon-config{
+	background:url(gwicons/goto.png) no-repeat ;
+	}
+.icon_view{
+	background:url(gwicons/node1.png) no-repeat ;
+	}
+.icon_delete{
+	background:url(gwicons/cancel.png) no-repeat ;
+	}

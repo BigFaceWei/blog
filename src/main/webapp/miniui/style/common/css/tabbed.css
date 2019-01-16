@@ -1,0 +1,63 @@
+.tabbed {
+  border-bottom: 1px solid #8DB2E3;
+  font-size: 12px;
+  height: 26px;
+  list-style-type: none;
+  margin: 0;
+  padding: 0 0 0 4px;
+  width: 100%;
+}
+.tabbed li {
+  border: 1px solid #8DB2E3;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  display: inline-block;
+  float: left;
+  margin-bottom: -1px;
+  margin-right: 4px;
+  padding: 0;
+  position: relative;
+}
+.tabbed li.tabbed-selected {
+  -moz-border-bottom-colors: none;
+  -moz-border-image: none;
+  -moz-border-left-colors: none;
+  -moz-border-right-colors: none;
+  -moz-border-top-colors: none;
+  border-color: #8DB2E3 #8DB2E3 #FFFFFF;
+  border-style: solid;
+  border-width: 1px;
+}
+.tabbed li a.tabbed-inner {
+  background: url("tabs_enabled.png") repeat-x scroll left top transparent;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  color: #416AA3;
+  display: inline-block;
+  height: 25px;
+  line-height: 25px;
+  margin: 0;
+  padding: 0 10px;
+  text-align: center;
+  text-decoration: none;
+  white-space: nowrap;
+}
+.tabbed li.tabbed-selected a {
+  background: url("tabs_active.png") repeat-x scroll left bottom #7EABCD;
+  color: #416AA3;
+  font-weight: bold;
+  outline: medium none;
+}
+.tabbed-with-icon {
+  padding-left: 18px;
+}
+.tabbed-icon {
+  height: 16px;
+  left: 10px;
+  position: absolute;
+  top: 5px;
+  width: 16px;
+}
+.icon-tabbed {
+  background: url("tabs.gif") no-repeat scroll 0 0 transparent !important;
+}

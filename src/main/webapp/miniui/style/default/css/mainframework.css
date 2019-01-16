@@ -1,0 +1,217 @@
+body,td,th {
+	font-family: "宋体";
+	font-size: 12px;
+}
+.daohang {
+	font-family: "宋体";
+	font-size: 12px;
+	font-weight: bold;
+	color: #2B4758;
+	text-decoration: none;
+	padding-top: 6px;
+}
+
+body {
+	margin-left: 0px;
+	margin-top: 0px;
+	margin-right: 0px;
+	margin-bottom: 0px;
+	background-color: #FFFFFF;
+}
+a:link {
+	text-decoration: none;
+	color: #0B6967;
+}
+a:visited {
+	text-decoration: none;
+	font-size: 12px;
+	color: #0B6967;
+}
+a:hover {
+	text-decoration: underline;
+	font-family: "宋体";
+	font-size: 12px;
+	font-weight: bold;
+	cursor: hand;
+	color: #CC0000;
+}
+a:active {
+	text-decoration: none;
+	color: #13B7B3;
+}
+.login_button {
+	font-family: "宋体";
+	font-size: 12px;
+	color: #317170;
+	text-decoration: none;
+	background-image: url(../images/mainframework/login_11.png);
+	background-repeat: no-repeat;
+	height: 22px;
+	width: 149px;
+	border-top-style: none;
+	border-right-style: none;
+	border-bottom-style: none;
+	border-left-style: none;
+	background-attachment: scroll;
+	background-position: left top;
+	margin: 0px;
+	border-top-width: 0px;
+	border-right-width: 0px;
+	border-bottom-width: 0px;
+	border-left-width: 0px;
+	padding-top: 4px;
+	padding-right: 0px;
+	padding-bottom: 0px;
+	padding-left: 2px;
+}
+.login_yes {
+	font-size: 12px;
+	text-decoration: none;
+	background-image: url(../images/mainframework/login_14.png);
+	background-repeat: no-repeat;
+	margin: 0px;
+	padding: 0px;
+	height: 31px;
+	width: 64px;
+	border-top-style: none;
+	border-right-style: none;
+	border-bottom-style: none;
+	border-left-style: none;
+	background-attachment: scroll;
+}
+.login_no {
+	font-size: 12px;
+	text-decoration: none;
+	background-image: url(../images/mainframework/login_16.png);
+	background-repeat: no-repeat;
+	margin: 0px;
+	padding: 0px;
+	height: 31px;
+	width: 64px;
+	border-top-style: none;
+	border-right-style: none;
+	border-bottom-style: none;
+	border-left-style: none;
+	background-attachment: scroll;
+}
+.bottom_font {
+	font-family: "宋体";
+	font-size: 12px;
+	text-decoration: none;
+	background-image: url(../images/mainframework/bottom.png);
+	background-repeat: repeat-x;
+	background-position: left top;
+	height: 24px;
+	text-align: center;
+	font-weight: bold;
+	color: #071D1D;
+}
+.left_font {
+	font-family: "宋体";
+	font-size: 12px;
+	font-weight: bold;
+	color: #FFFFFF;
+	text-decoration: none;
+	filter: Glow(Color=#006666, Strength=3);
+	padding-top: 10px;
+	padding-left: 4px;
+}
+#div1 {
+	font-family: "宋体";
+	font-size: 12px;
+	text-decoration: none;
+	float: left;
+	width: 46%;
+}
+#div2 a {
+	font-family: "宋体";
+	font-size: 12px;
+	color: #FFFFFF;
+	text-decoration: none;
+	filter: Glow(Color=#000000, Strength=2);
+	height: 20px;
+	padding-top: 3px;
+	padding-left: 4px;
+}
+.div1_td {
+	background-color: #DCF7F6;
+	background-image: url(../images/mainframework/index_49.png);
+	background-repeat: repeat-x;
+	background-position: left top;
+}
+
+/*tab页菜单*/
+.menut {
+	/*margin-top:0px;
+	border-top:0px;*/
+	padding-top:0px;
+	padding-left:28px;
+	
+	background-image:url('../images/mainframework/card_left_nosel.gif');
+	background-position:0px 0px;
+	background-repeat:no-repeat;
+	
+	cursor: pointer;	
+}
+
+.menut span {
+	/*padding : 3px 8px 4px 4px;*/
+	padding-top:3px;
+	padding-right:8px;
+	padding-bottom:4px;
+	padding-left:4px;
+	
+	background-image:url('../images/mainframework/card_right_nosel.gif');
+	background-position:right top;
+
+	height:100%;
+	color:#666666;
+	font-size : 10pt;
+	font-weight:bold;
+	white-space:nowrap;
+}
+
+.menut.current {
+	/*margin-top:0px;
+	border-top:0px;*/
+	padding-top:0px;
+	padding-left:28px;
+	
+	background-image:url('../images/mainframework/card_left_sel.gif');
+	background-position :0px 0px;
+	background-repeat:no-repeat;
+	
+	cursor: default;
+}
+
+.menut.current span {
+	/*padding : 3px 8px 4px 4px;*/
+	padding-top:3px;
+	padding-right:8px;
+	padding-bottom:4px;
+	padding-left:4px;
+	
+	background-image:url('../images/mainframework/card_right_sel.gif');
+	background-position:right top;
+	
+	height:100%;
+	color : #016766;
+	font-weight:bold;
+	font-size : 10pt;
+	white-space:nowrap;
+	
+}
+
+.closecss {
+	background : url('../images/mainframework/card_close2.GIF') no-repeat left center;
+	height:15px;
+	width:14px;
+	margin-left:10px;
+}
+
+.closecss.mouseover{
+	background : url('../images/mainframework/card_close.GIF') no-repeat left center;
+	height:15px;
+	width:14px;
+	margin-left:10px;
+}

@@ -1,0 +1,49 @@
+/* 滑动门样式 */
+ul.scrollUl li a{color: Black;text-decoration:none;}
+ul.scrollUl li a:hover{color:#F00;text-decoration:underline;}
+
+ul.scrollUl {
+	border-bottom: 1px solid #a2c6d7;
+	overflow: hidden;
+	height: 19px;
+	margin-top: 1px;
+	margin-bottom: 1px;
+	margin-left: 0px;
+	color: #2d3380;
+	line-height:18px;
+}
+
+ul.scrollUl li {
+	float: left;
+	font-size:12px;
+}
+
+ul.scrollUl li.sd01 {
+	cursor: pointer;
+	border-top: 1px #a2c6d7 solid ;
+	border-left: 1px #a2c6d7 solid ;
+	border-right: 1px #a2c6d7 solid ;
+	background: #eee;
+	margin-left: 5px;
+	padding: 2px;
+	font-weight: bold;
+	text-align: center;
+	FILTER: progid:DXImageTransform.Microsoft.Gradient(GradientType=0,StartColorStr=#FFFFFF,EndColorStr=#E6EBF0);
+	background-color: #E6EBF0;
+}
+
+ul.scrollUl li.sd02 {
+	cursor: pointer;
+	border-top: 1px #a2c6d7 solid ;
+	border-left: 1px #a2c6d7 solid ;
+	border-right: 1px #a2c6d7 solid ;
+	background: #FFF;
+	margin-left: 5px;
+	padding: 2px;
+	font-weight: bold;
+	text-align: center;
+}
+
+.hidden {
+	display: none;
+}

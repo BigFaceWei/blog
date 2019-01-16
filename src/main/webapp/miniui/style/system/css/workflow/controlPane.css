@@ -1,0 +1,31 @@
+#controlPane{
+	height: 100%;
+}
+
+.middle{ 
+    background:#FFFFFF; 
+    text-align:left; 
+    position: relative; 
+    height: 100%;
+} 
+.sideleft{ 
+    position: absolute; 
+    padding-right: 150px; 
+    word-break:break-all; 
+    overflow:hidden;
+    table-layout:fixed; 
+    height: 100%;
+} 
+.sideright{ 
+    width: 150px; 
+    background: #F0F0F0; 
+    float: right; 
+    height: 100%;  
+    border-left:1px solid #CCC;
+	_position:absolute;_top:expression(eval(document.documentElement.scrollTop));
+	z-index:1000;right:0;top:0; 
+} 
+
+#buttonPane{
+
+}

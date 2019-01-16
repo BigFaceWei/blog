@@ -1,0 +1,99 @@
+@CHARSET "UTF-8";  
+  
+.x-window-footer {  
+    position: relative;  
+    top: 0;  
+    right: 0;  
+}  
+  
+.x-tab-strip span.x-tab-strip-text {  
+    font-size: 13px;  
+}  
+  
+.x-panel-header {  
+    font-size: 13px;  
+}  
+  
+.x-tree-node {  
+    font-size: 13px;  
+}  
+  
+.x-grid3-hd-row td {  
+    font-size: 13px;  
+}  
+  
+.x-grid3-row td {  
+    font-size: 13px;  
+    line-height: 16px;  
+}  
+  
+.x-tip .x-tip-bd {  
+    font-size: 13px;  
+}  
+  
+.x-tip h3 {  
+    font-size: 13px;  
+}  
+  
+.x-tip .x-tip-bd-inner {  
+    font-size: 13px;  
+}  
+  
+.x-panel-tl .x-panel-header {  
+    font: normal 13px tahoma, arial, verdana, sans-serif;  
+}  
+  
+.x-form-field {  
+    font: 13px tahoma, arial, helvetica, sans-serif;  
+}  
+  
+.x-small-editor .x-form-field {  
+    font: 13px tahoma, arial, helvetica, sans-serif;  
+}  
+  
+.x-combo-list-item {  
+    font: 13px tahoma, arial, helvetica, sans-serif;  
+}  
+  
+.x-menu-list-item {  
+    font: 13px tahoma, arial, sans-serif;  
+}  
+  
+.x-window-tl .x-window-header {  
+    font: bold 13px tahoma, arial, verdana, sans-serif;  
+}  
+  
+.ext-ie .x-form-text {  
+    margin-top: 1px;  
+}  
+  
+.x-form-item {  
+    font: 13px tahoma, arial, helvetica, sans-serif;  
+}  
+  
+.x-grid-group-hd div {  
+    font: bold 13px tahoma, arial, helvetica, sans-serif;  
+}  
+  
+.x-btn-text-icon .x-btn-center .x-btn-text {  
+    background-position: 0pt 2px;  
+    background-repeat: no-repeat;  
+    padding: 3px 0pt 2px 18px;  
+}  
+  
+.ext-gecko .x-btn button {  
+    padding-left:0pt;  
+    padding-right: 0pt;  
+}  
+  
+.x-btn button {  
+    font-size: 13px;  
+}  
+  
+.x-toolbar td,.x-toolbar span,.x-toolbar input,.x-toolbar div,.x-toolbar select,.x-toolbar label {  
+    font-size: 13px;  
+}  
+  
+.x-tip .x-tip-body {  
+    font-size: 13px;  
+}  

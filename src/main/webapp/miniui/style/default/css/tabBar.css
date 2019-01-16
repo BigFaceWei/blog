@@ -1,0 +1,61 @@
+/* ��������ʽ */
+ul.scrollUl li a {
+	color: Black;
+	text-decoration: none;
+}
+
+ul.scrollUl li a:hover {
+	color: #F00;
+	text-decoration: underline;
+}
+
+ul.scrollUl {
+	background-color: transparent;
+	margin-left: 0px;
+	border-bottom: 1px solid #a2c6d7;
+	overflow: hidden;
+	height: 30px;
+	margin-top: 0px;
+	margin-bottom: 0px;
+	margin-left: 0px;
+	padding-right: 3px;
+	color:#416AA3;
+	line-height: 26px;
+}
+
+ul.scrollUl li {
+	float: left;
+	align:center;
+	font-size: 12px;
+    margin1:0px 1px;
+    margin-right:4px;
+    margin-bottom:-1px;
+    padding-left:10px;	
+    padding-right:10px;  
+}
+
+ul.scrollUl li.sd01 {
+	BORDER-RIGHT: #8DB2E3 1px solid;
+	BORDER-LEFT: #8DB2E3 1px solid;
+	BORDER-TOP: #8DB2E3 1px solid;
+	FONT-WEIGHT: bold;
+	CURSOR: default;
+	background:url('../images/tabBar/tabs_active.png') repeat-x left bottom;
+}
+
+ul.scrollUl li.sd02 {
+    BORDER-RIGHT: #8DB2E3 1px solid;
+    BORDER-LEFT: #8DB2E3 1px solid;
+    BORDER-TOP: #8DB2E3 1px solid;
+	FONT-WEIGHT: normal;
+	CURSOR: hand;
+	background:url('../images/tabBar/tabs_enabled.png') repeat-x left bottom;
+}
+
+.BottomColor {
+	background-color: #c9defa;
+}
+
+.hidden {
+	display: none;
+}

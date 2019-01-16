@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<skin name="default"  url="/style/default">
+	<processor type="net.sf.opentranquera.xkins.core.processor.VelocityTemplateProcessor"/>
+    
+    <constant name="applicationTitle" value="TBP"/>
+
+    <path name="css" url="/css"/>
+    <path name="javascript" url="/js"/>
+    <path name="images" url="/images"/>
+    
+    <element name="MzTreeViewCss" path="css" url="/MzTreeView.css"/>
+</skin>

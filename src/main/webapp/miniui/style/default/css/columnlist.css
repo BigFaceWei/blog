@@ -1,0 +1,66 @@
+.webfx-columnlist {
+	BORDER-RIGHT: buttonhighlight 1px solid; BORDER-TOP: buttonshadow 1px solid; DISPLAY: block; OVERFLOW: hidden; BORDER-LEFT: buttonshadow 1px solid; BORDER-BOTTOM: buttonhighlight 1px solid; -moz-user-select: none; -moz-user-focus: normal; -moz-user-input: enabled
+}
+.webfx-columnlist TD {
+	PADDING-RIGHT: 1px; PADDING-LEFT: 1px; PADDING-BOTTOM: 1px; FONT: menu; PADDING-TOP: 1px; WHITE-SPACE: nowrap
+}
+.webfx-columnlist-head {
+	BACKGROUND: buttonface; OVERFLOW: hidden; POSITION: absolute; -moz-user-select: none
+}
+.webfx-columnlist-head TABLE {
+	TABLE-LAYOUT: fixed
+}
+.webfx-columnlist-head TD {
+	background-image:url(../images/TableDefault/001.png);
+	BORDER-RIGHT: buttonface 1px solid; 
+	BORDER-TOP: #52B4B1 1px solid; 
+	BORDER-LEFT: 	#52B4B1 1px solid; 
+	BORDER-BOTTOM: buttonshadow 1px solid; 
+	OVERFLOW: hidden; 
+	COLOR: #ffffff;
+	FONT-FAMILY: "ËÎÌו"; FONT-SIZE: 12px;
+	font-weight:   bold;
+	LINE-HEIGHT: 18px;
+
+	TEXT-OVERFLOW: ellipsis
+}
+.webfx-columnlist-head TD DIV {
+	OVERFLOW: hidden; WHITE-SPACE: nowrap; TEXT-OVERFLOW: ellipsis
+}
+.webfx-columnlist-head TD IMG {
+	DISPLAY: none; MARGIN: 0px 1px; WIDTH: 8px; HEIGHT: 7px
+}
+.webfx-columnlist-body {
+	BORDER-RIGHT: buttonface 1px solid; BORDER-TOP: buttonhighlight 1px solid; BACKGROUND: window; OVERFLOW: auto; BORDER-LEFT: buttonhighlight 1px solid; BORDER-BOTTOM: buttonface 1px solid
+}
+.webfx-columnlist-body TABLE {
+	TABLE-LAYOUT: fixed
+}
+.webfx-columnlist-body TD {
+	BORDER-RIGHT: #52B4B1 1px solid;   solid; 
+	BORDER-TOP: #52B4B1 solid; OVERFLOW: hidden; 
+	BORDER-LEFT: #52B4B1 solid; 
+	BORDER-BOTTOM: #52B4B1 solid; 
+	TEXT-OVERFLOW: ellipsis
+}
+.webfx-columnlist-body TD DIV {
+	BORDER-TOP-WIDTH: 0px; BORDER-LEFT-WIDTH: 0px; OVERFLOW: hidden; BORDER-BOTTOM: white 0px solid; WHITE-SPACE: nowrap; TEXT-OVERFLOW: ellipsis; BORDER-RIGHT-WIDTH: 0px
+}
+.webfx-columnlist-body TR.selected TD {
+	BACKGROUND: #c0c0ff
+}
+.webfx-columnlist-body TR.odd TD {
+	BACKGROUND: #ffffc0
+}
+.webfx-columnlist-body TR.even TD {
+	BACKGROUND: window
+}
+.webfx-columnlist-move-header {
+	PADDING-RIGHT: 2px; PADDING-LEFT: 2px; BACKGROUND: buttonshadow; FILTER: Alpha(Opacity=50); PADDING-BOTTOM: 2px; FONT: menu; PADDING-TOP: 2px; POSITION: absolute; TOP: 0px; HEIGHT: 1em; -moz-user-select: none; -moz-opacity: 0.5
+}
+.webfx-columnlist-active-header {
+	BORDER-LEFT-COLOR: buttonface! important; BORDER-BOTTOM-COLOR: buttonface! important; BORDER-TOP-COLOR: buttonface! important; BORDER-RIGHT-COLOR: buttonface! important
+}
+.webfx-columnlist-separator-header {
+	PADDING-RIGHT: 0px; PADDING-LEFT: 0px; BACKGROUND: blue; LEFT: 10px; PADDING-BOTTOM: 3px; FONT: menu; OVERFLOW: hidden; WIDTH: 1px; PADDING-TOP: 3px; POSITION: absolute; TOP: 0px; HEIGHT: 1em
+}
