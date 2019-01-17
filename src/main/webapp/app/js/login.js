@@ -41,7 +41,7 @@ function login() {
 
     jQuery.ajax({
         type: 'post',
-        url: "/blog/loginAction!loginCheck.do",
+        url: "/blog/userAction!loginCheck.do",
         async: false,
         dataType: 'json',
         data: {username: username, password: password},
@@ -56,7 +56,7 @@ function login() {
                     showTips("用户名或密码错误,登陆失败", 4000);
                 } else if (data.result === "true") {
                     showTips("登陆成功", 1000);
-                    window.location.href = "/blog/loginAction!index.do";
+                    window.location.href = "/blog/userAction!index.do";
                 }
                 unmaskobj("content");
             }

@@ -28,11 +28,8 @@
     <link href="<%=root %>/miniui/themes/dsg-style/icons.css" rel="stylesheet" type="text/css" charset="GBK"/>
     <script src="<%=root %>/miniui/jquery-1.6.2.min.js" type="text/javascript" charset="GBK"></script>
     <script src="<%=root %>/miniui/miniui.js" type="text/javascript" charset="GBK"></script>
-
 </head>
-
 <body>
-
 <div class="page-container" id="content">
     <h1>个人博客</h1>
     <form action="" method="post">
@@ -51,6 +48,5 @@
     mini.parse();
 </script>
 </body>
-
 </html>
 

@@ -7,7 +7,7 @@ jQuery(document).ready(function () {
 function exist() {
     jQuery.ajax({
         type: 'post',
-        url: "/blog/loginAction!exist.do",
+        url: "/blog/userAction!exist.do",
         async: false,
         dataType: 'json',
         cache: false,
@@ -21,7 +21,7 @@ function exist() {
                     showTips("退出失败", 4000);
                 } else if (data.result === "true") {
                     showTips("退出成功", 1000);
-                    window.location.href = "/blog/loginAction!login.do";
+                    window.location.href = "/blog/userAction!login.do";
                 }
                 unmaskobj("content");
             }

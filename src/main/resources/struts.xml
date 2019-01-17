@@ -33,25 +33,18 @@
         </result-types>
         <interceptors>
             <interceptor name="sessionInterceptor" class="com.wxy.action.SessionInterceptor">
-                <param name="exclude">loginAction!loginCheck.do</param>
+                <param name="exclude">userAction!loginCheck.do</param>
             </interceptor>
             <interceptor-stack name="myStack">
                 <interceptor-ref name="logger" />
                 <interceptor-ref name="params" />
-                <!--<interceptor-ref name="sessionInterceptor" />-->
+                <interceptor-ref name="sessionInterceptor" />
             </interceptor-stack>
         </interceptors>
         <default-interceptor-ref name="myStack" />
         <global-results>
-            <result name="error" type="redirect">loginAction!login.do</result>
+            <result name="error" type="redirect">userAction!login.do</result>
         </global-results>
-
-        <action name="loginAction" class="com.wxy.action.LoginAction">
-            <result type="json">result</result>
-            <result name="login">/app/login.jsp</result>
-            <result name="index">/app/index.jsp</result>
-        </action>
-
         <action name="userAction" class="com.wxy.action.UserAction">
             <result type="json">result</result>
             <result name="login">/app/login.jsp</result>

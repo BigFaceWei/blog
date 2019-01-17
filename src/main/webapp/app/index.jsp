@@ -12,7 +12,6 @@
 <html>
 <head>
     <title>个人博客V1.0</title>
-
     <meta http-equiv="content-type" content="text/html;charset=UTF-8">
     <link rel="stylesheet" type="text/css" href="/blog/app/css/style.css"/>
     <link rel="icon" href="/blog/favicon.ico" type="image/x-icon"/>
@@ -35,22 +34,18 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/js/bootstrap.min.js"
             integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
             crossorigin="anonymous"></script>
-
 </head>
 <body>
 <div id="wrapper">
     <div id="header">
-
         <div id="logo"><img alt="blog" src="<%=root%>/app/images/logo.png" width="60" height="60"/></div>
         <div id="title">个人博客V1.0</div>
-
         <div id="user_info">
             <div id="user_img"><img alt="logo" src="<%=root%>/app/images/user/user.png" width="60" height="60"/></div>
             <div id="welcome">欢迎<span style="color:green;"><s:property value="#session.username"/></span>使用本系统</div>
             <div id="logout">安全退出</div>
         </div>
     </div>
-
     <div class="container">
         <div class="row clearfix">
             <div class="col-md-12 column">
@@ -118,7 +113,6 @@
                             </td>
                         </tr>
                     </s:iterator>
-
                     </tbody>
                 </table>
                 <ul class="pagination">
@@ -163,7 +157,6 @@
 <script type="text/javascript">
     var c = 0;
     var t;
-
     function timedCount() {
         c = c + 1;
         if (c === 60) {
