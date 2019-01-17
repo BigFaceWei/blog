@@ -2,11 +2,9 @@ package com.wxy.service;
 
 import com.wxy.model.BlogUser;
 import com.wxy.model.BlogUserExample;
-
 import java.util.List;
 
 public interface UserService {
-   
     BlogUser findById(int id);
 
     List<BlogUser> findAll();
@@ -23,5 +21,4 @@ public interface UserService {
 
     //根据用户id修改用户信息
     boolean modifyUser(BlogUser user);
-  
 }

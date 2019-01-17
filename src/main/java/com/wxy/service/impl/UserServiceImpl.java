@@ -25,7 +25,7 @@ public class UserServiceImpl implements UserService {
     @Override
     public List<BlogUser> findAll() {
         BlogUserExample example = new BlogUserExample();
-        return userMapper.selectByExample(example, Integer.valueOf(0));
+        return userMapper.selectByExample(example, 0);
     }
 
     public List<BlogUser> search(BlogUserExample example, Integer pageFlag){
