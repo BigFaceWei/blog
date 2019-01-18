@@ -10,9 +10,6 @@ http://www.springframework.org/schema/tx/spring-tx-3.0.xsd
 http://www.springframework.org/schema/aop 
 http://www.springframework.org/schema/aop/spring-aop-3.0.xsd">
 
-    <!-- JNDI方式配置数据源 -->
-    <!-- <bean id="dataSource" class="org.springframework.jndi.JndiObjectFactoryBean"> <property name="jndiName" value="${jndiName}"></property> </bean> -->
-
     <!-- 配置数据源 -->
     <bean name="dataSource" class="com.alibaba.druid.pool.DruidDataSource" init-method="init" destroy-method="close">
         <!-- 配置数据源的链接地址、账号、密码 -->
@@ -25,8 +22,6 @@ http://www.springframework.org/schema/aop/spring-aop-3.0.xsd">
         <property name="initialSize" value="0" />
         <!-- 连接池最大使用连接数量 -->
         <property name="maxActive" value="20" />
-        <!-- 连接池最大空闲 -->
-        <property name="maxIdle" value="20" />
         <!-- 连接池最小空闲 -->
         <property name="minIdle" value="0" />
         <!-- 获取连接最大等待时间 -->
