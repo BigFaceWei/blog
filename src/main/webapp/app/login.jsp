@@ -24,12 +24,15 @@
     <script src="<%=root %>/app/js/supersized.3.2.7.min.js"></script>
     <script src="<%=root %>/app/js/supersized-init.js"></script>
     <script src="<%=root %>/app/js/login.js"></script>
-    <link href="<%=root %>/miniui/themes/default/miniui.css" rel="stylesheet" type="text/css" charset="GBK"/>
-    <link href="<%=root %>/miniui/themes/dsg-style/icons.css" rel="stylesheet" type="text/css" charset="GBK"/>
-    <script src="<%=root %>/miniui/jquery-1.6.2.min.js" type="text/javascript" charset="GBK"></script>
-    <script src="<%=root %>/miniui/miniui.js" type="text/javascript" charset="GBK"></script>
+    <link href="<%=root %>/miniui/themes/default/miniui.css" rel="stylesheet" type="text/css" charset="UTF-8"/>
+    <link href="<%=root %>/miniui/themes/dsg-style/icons.css" rel="stylesheet" type="text/css" charset="UTF-8"/>
+    <script src="<%=root %>/miniui/jquery-1.6.2.min.js" type="text/javascript" charset="UTF-8"></script>
+    <script src="<%=root %>/miniui/miniui.js" type="text/javascript" charset="UTF-8"></script>
+
 </head>
+
 <body>
+
 <div class="page-container" id="content">
     <h1>个人博客</h1>
     <form action="" method="post">
@@ -48,5 +51,6 @@
     mini.parse();
 </script>
 </body>
+
 </html>
 
