@@ -18,9 +18,9 @@ public interface BlogMapper {
 
     List<Blog> selectByExampleWithBLOBs(BlogExample example);
 
-    List<Blog> selectByExample(BlogExample example);
-
     Blog selectByPrimaryKey(Integer blogId);
+
+    List<Blog> selectByExample(@Param("example") BlogExample example, @Param("pageFlag") Integer pageFlag );
 
     int updateByExampleSelective(@Param("record") Blog record, @Param("example") BlogExample example);
 

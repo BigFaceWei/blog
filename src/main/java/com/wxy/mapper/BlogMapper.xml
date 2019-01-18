@@ -92,18 +92,21 @@
       order by ${orderByClause}
     </if>
   </select>
-  <select id="selectByExample" parameterType="com.wxy.model.BlogExample" resultMap="BaseResultMap">
+  <select id="selectByExample" parameterType="map" resultMap="BaseResultMap">
     select
-    <if test="distinct">
+    <if test="example.distinct">
       distinct
     </if>
-    <include refid="Base_Column_List" />
-    from blog
+    <include refid="Base_Column_List"/>
+    from  blog
     <if test="_parameter != null">
-      <include refid="Example_Where_Clause" />
+      <include refid="Update_By_Example_Where_Clause"/>
     </if>
-    <if test="orderByClause != null">
+    <if test="example.orderByClause != null">
       order by ${orderByClause}
+    </if>
+    <if test="pageFlag != null">
+      limit ${pageFlag},10
     </if>
   </select>
   <select id="selectByPrimaryKey" parameterType="java.lang.Integer" resultMap="ResultMapWithBLOBs">
