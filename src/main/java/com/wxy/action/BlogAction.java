@@ -38,13 +38,6 @@ public class BlogAction extends BaseAction {
         return "login";
     }
 
-    public String exist() {
-        HttpSession session = request.getSession();
-        session.removeAttribute("uid");
-        result = "true";
-        return SUCCESS;
-    }
-
 //    public String loginCheck() {
 //        String username = request.getParameter("username");
 //        String password = request.getParameter("password");

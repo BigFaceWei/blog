@@ -1,5 +1,4 @@
 jQuery(document).ready(function () {
-
     $('#register').click(function () {
         window.location.href = "/blog/userAction!goAdd.do";
     });
