@@ -11,7 +11,7 @@ import javax.servlet.http.HttpSession;
 import java.util.List;
 
 public class BlogAction extends BaseAction {
-    private static final long serialVersionUID = 1L;
+    private static final long serialVersionUID = 2L;
 
     private BlogService blogService;
     private String result;
@@ -21,45 +21,14 @@ public class BlogAction extends BaseAction {
     private Integer maxPage = 1;
     private Integer blogId;
 
+    private String userId;
     private String blogImgs;
-
     private String blogTitle;
-
     private String blogTime;
-
     private String blogKindBig;
-
     private String blogKindLabel;
-
     private String blogContent;
     private static Integer pageSize = 10;
-
-    public String login() {
-        return "login";
-    }
-
-//    public String loginCheck() {
-//        String username = request.getParameter("username");
-//        String password = request.getParameter("password");
-//        BlogExample blog = new BlogExample();
-//        blog.createCriteria().andUserAccountEqualTo(username).andUserPasswordEqualTo(password).andBlogUserIdIsNotNull();
-//
-//        try {
-//            BlogUser retUser = userService.checkUser(blog);
-//
-//            if (retUser != null) {
-//                HttpSession session = request.getSession();
-//                session.setAttribute("uid", retUser.getBlogUserId());
-//                session.setAttribute("username", retUser.getUserAccount());
-//                result = "true";
-//            } else {
-//                result = "false";
-//            }
-//        } catch (Exception e) {
-//            e.printStackTrace();
-//        }
-//        return SUCCESS;
-//    }
 
     public String index() {
         try {
@@ -76,7 +45,7 @@ public class BlogAction extends BaseAction {
             maxPage = (int) ((size - 1) / pageSize) + 1;
 
             ac.put("maxPage", maxPage);
-            ac.put("users", blogs);
+            ac.put("blogs", blogs);
         } catch (Exception e) {
             e.printStackTrace();
         }
@@ -99,19 +68,17 @@ public class BlogAction extends BaseAction {
 //        return "index";
 //    }
 
-//    public String goAdd() {
-//        HttpSession session = request.getSession();
-//        Object object = session.getAttribute("uid");
-//
-//        if (object != null) {
-//            blogUserId = Integer.valueOf(object.toString());
-//        }
-//
-//        ActionContext ac = ActionContext.getContext();
-//        ac.put("blogUserId", blogUserId);
-//
-//        return "goAdd";
-//    }
+    public String goAdd() {
+        HttpSession session = request.getSession();
+        Object object = session.getAttribute("uid");
+        if (object == null) {
+            return "login";
+        }
+        ActionContext ac = ActionContext.getContext();
+        ac.put("userId", object.toString());
+
+        return "goAdd";
+    }
 
 //    public String add() {
 //        if (userService.addUser(blog)) {
@@ -163,7 +130,6 @@ public class BlogAction extends BaseAction {
     public void setResult(String result) {
         this.result = result;
     }
-
 
     @JSON(serialize = false)
     public BlogService getBlogService() {
@@ -260,5 +226,13 @@ public class BlogAction extends BaseAction {
 
     public static void setPageSize(Integer pageSize) {
         BlogAction.pageSize = pageSize;
+    }
+
+    public String getUserId() {
+        return userId;
+    }
+
+    public void setUserId(String userId) {
+        this.userId = userId;
     }
 }

@@ -55,6 +55,8 @@
         <action name="blogAction" class="com.wxy.action.BlogAction">
             <result type="json">result</result>
             <result name="index">/app/blogList.jsp</result>
+            <result name="login">/app/login.jsp</result>
+            <result name="goAdd">/app/blogAdd.jsp</result>
         </action>
     </package>
 </struts>

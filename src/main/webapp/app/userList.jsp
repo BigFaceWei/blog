@@ -46,104 +46,104 @@
             <div id="logout">安全退出</div>
         </div>
     </div>
-    <div class="container">
-        <div class="row clearfix">
-            <div class="col-md-12 column">
-                <nav class="navbar navbar-default" role="navigation">
-                    <div class="navbar-header">
-                        <button type="button" class="navbar-toggle" data-toggle="collapse"
-                                data-target="#bs-example-navbar-collapse-1"><span
-                                class="sr-only">Toggle navigation</span><span
-                                class="icon-bar"></span><span class="icon-bar"></span><span
-                                class="icon-bar"></span></button>
-                        <a class="navbar-brand" href="blogAction!index.do">博客</a>
-                    </div>
-                    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-                        <ul class="nav navbar-nav">
-                            <li>
-                                <a href="userAction!search.do">用户管理</a>
-                            </li>
-                        </ul>
-                        <form class="navbar-form navbar-left" action="userAction!search.do"
-                              method="post">
-                            <div class="form-group">
-                                <input id="userAccount" placeholder="账号" type="text" class="form-control"
-                                       name="userAccount"/>
-                            </div>
-                            <button type="submit" class="btn btn-default">搜索</button>
-                        </form>
-                        <ul class="nav navbar-nav navbar-right">
-                            <li>
-                                <a href="userAction!goAdd.do">新增用户</a>
-                            </li>
-                        </ul>
-                    </div>
-                </nav>
-                <table class="table">
-                    <s:token/>
-                    <thead>
+</div>
+<div class="container">
+    <div class="row clearfix">
+        <div class="col-md-12 column">
+            <nav class="navbar navbar-default" role="navigation">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse"
+                            data-target="#bs-example-navbar-collapse-1"><span
+                            class="sr-only">Toggle navigation</span><span
+                            class="icon-bar"></span><span class="icon-bar"></span><span
+                            class="icon-bar"></span></button>
+                    <a class="navbar-brand" href="blogAction!index.do">博客</a>
+                </div>
+                <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                    <ul class="nav navbar-nav">
+                        <li>
+                            <a href="userAction!search.do">用户管理</a>
+                        </li>
+                    </ul>
+                    <form class="navbar-form navbar-left" action="userAction!search.do"
+                          method="post">
+                        <div class="form-group">
+                            <input id="userAccount" placeholder="账号" type="text" class="form-control"
+                                   name="userAccount"/>
+                        </div>
+                        <button type="submit" class="btn btn-default">搜索</button>
+                    </form>
+                    <ul class="nav navbar-nav navbar-right">
+                        <li>
+                            <a href="userAction!goAdd.do">新增用户</a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+            <table class="table">
+                <s:token/>
+                <thead>
+                <tr>
+                    <th>
+                        ID
+                    </th>
+                    <th>
+                        账号
+                    </th>
+                    <th>
+                        密码
+                    </th>
+                    <th>
+                        管理员
+                    </th>
+                    <th>
+                        操作
+                    </th>
+                </tr>
+                </thead>
+                <tbody>
+                <s:iterator id="user" value="users" status="status">
                     <tr>
-                        <th>
-                            ID
-                        </th>
-                        <th>
-                            账号
-                        </th>
-                        <th>
-                            密码
-                        </th>
-                        <th>
-                            管理员
-                        </th>
-                        <th>
-                            操作
-                        </th>
+                        <td><s:property value="#user.blogUserId"/></td>
+                        <td><s:property value="#user.userAccount"/></td>
+                        <td><s:property value="#user.userPassword"/></td>
+                        <td><s:property value="#user.userIsAdmin=='YES'?'管理员':'用户'"/></td>
+                        <td>
+                            <a href="userAction!edit.do?blogUserId=<s:property value="#user.blogUserId"/>">编辑</a>
+                            <a href="userAction!del.do?blogUserId=<s:property value="#user.blogUserId"/>">删除</a>
+                        </td>
                     </tr>
-                    </thead>
-                    <tbody>
-                    <s:iterator id="user" value="users" status="status">
-                        <tr>
-                            <td><s:property value="#user.blogUserId"/></td>
-                            <td><s:property value="#user.userAccount"/></td>
-                            <td><s:property value="#user.userPassword"/></td>
-                            <td><s:property value="#user.userIsAdmin=='YES'?'管理员':'用户'"/></td>
-                            <td>
-                                <a href="userAction!edit.do?blogUserId=<s:property value="#user.blogUserId"/>">编辑</a>
-                                <a href="userAction!del.do?blogUserId=<s:property value="#user.blogUserId"/>">删除</a>
-                            </td>
-                        </tr>
+                </s:iterator>
+                </tbody>
+            </table>
+            <ul class="pagination">
+                <li>
+                    <s:if test="pageNum != 1">
+                        <a href="userAction!search.do?pageNum=<s:property value="pageNum - 1"/>">上一页</a>
+                    </s:if>
+                </li>
+                <s:bean name="org.apache.struts2.util.Counter" id="counter">
+                    <s:param name="first" value="1"/>
+                    <s:param name="last" value="maxPage"/>
+                    <s:iterator>
+                        <li>
+                            <a href="userAction!search.do?pageNum=<s:property/>"
+                               name="<s:property/>" class="page"><s:property/></a>
+                        </li>
                     </s:iterator>
-                    </tbody>
-                </table>
-                <ul class="pagination">
-                    <li>
-                        <s:if test="pageNum != 1">
-                            <a href="userAction!search.do?pageNum=<s:property value="pageNum - 1"/>">上一页</a>
-                        </s:if>
-                    </li>
-                    <s:bean name="org.apache.struts2.util.Counter" id="counter">
-                        <s:param name="first" value="1"/>
-                        <s:param name="last" value="maxPage"/>
-                        <s:iterator>
-                            <li>
-                                <a href="userAction!search.do?pageNum=<s:property/>"
-                                   name="<s:property/>" class="page"><s:property/></a>
-                            </li>
-                        </s:iterator>
-                    </s:bean>
-                    <li>
-                        <s:if test="pageNum != maxPage">
-                            <a href="userAction!search.do?pageNum=<s:property value="pageNum + 1"/>">下一页</a>
-                        </s:if>
-                    </li>
-                    <li>
-                        <a>当前页：<s:property value="pageNum"/></a>
-                    </li>
-                    <li>
-                        <a>总页数：<s:property value="maxPage"/></a>
-                    </li>
-                </ul>
-            </div>
+                </s:bean>
+                <li>
+                    <s:if test="pageNum != maxPage">
+                        <a href="userAction!search.do?pageNum=<s:property value="pageNum + 1"/>">下一页</a>
+                    </s:if>
+                </li>
+                <li>
+                    <a>当前页：<s:property value="pageNum"/></a>
+                </li>
+                <li>
+                    <a>总页数：<s:property value="maxPage"/></a>
+                </li>
+            </ul>
         </div>
     </div>
 </div>
