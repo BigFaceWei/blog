@@ -4,7 +4,6 @@
 %>
 <!DOCTYPE html>
 <html lang="en" class="no-js">
-
 <head>
     <meta charset="utf-8">
     <title>系统登录</title>
@@ -14,7 +13,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="">
     <meta name="author" content="">
-
     <!-- CSS -->
     <link rel='stylesheet' href='http://fonts.googleapis.com/css?family=PT+Sans:400,700'>
     <link rel="stylesheet" href="<%=root %>/app/css/login_reset.css">
@@ -28,11 +26,8 @@
     <link href="<%=root %>/miniui/themes/dsg-style/icons.css" rel="stylesheet" type="text/css" charset="UTF-8"/>
     <script src="<%=root %>/miniui/jquery-1.6.2.min.js" type="text/javascript" charset="UTF-8"></script>
     <script src="<%=root %>/miniui/miniui.js" type="text/javascript" charset="UTF-8"></script>
-
 </head>
-
 <body>
-
 <div class="page-container" id="content">
     <h1>个人博客</h1>
     <form action="" method="post">
@@ -51,6 +46,5 @@
     mini.parse();
 </script>
 </body>
-
 </html>
 
