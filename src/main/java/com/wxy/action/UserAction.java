@@ -94,7 +94,7 @@ public class UserAction extends BaseAction {
 
         maxPage = (int) ((size - 1) / pageSize) + 1;
         ac.put("maxPage", maxPage);
-        return "index";
+        return "userList";
     }
 
     public String goAdd() {
@@ -114,7 +114,7 @@ public class UserAction extends BaseAction {
     public String add() {
         if (userService.addUser(user)) {
             goIndex();
-            return "index";
+            return "userList";
         }
         return "login";
     }
@@ -131,7 +131,7 @@ public class UserAction extends BaseAction {
     public String upd() {
         if (userService.modifyUser(user)) {
             goIndex();
-            return "index";
+            return "userList";
         }
         return ERROR;
     }
@@ -139,7 +139,7 @@ public class UserAction extends BaseAction {
     public String del() {
         if (blogUserId != -1 && userService.deleteById(blogUserId)) {
             goIndex();
-            return "index";
+            return "userList";
         }
         return ERROR;
     }

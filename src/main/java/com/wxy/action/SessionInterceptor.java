@@ -23,7 +23,7 @@ public class SessionInterceptor implements Interceptor{
 		ActionContext ac = arg0.getInvocationContext();
 		Map<String, Object> session = ac.getSession();
 
-		if (session.get("userid")!= null) {
+		if (session.get("uid")!= null) {
 			return arg0.invoke();
 		} else {
 			return "error";

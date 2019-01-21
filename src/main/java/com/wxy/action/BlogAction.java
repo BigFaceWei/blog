@@ -70,13 +70,13 @@ public class BlogAction extends BaseAction {
             Blog blog = blogService.findById(Integer.parseInt(userId));
             request.setAttribute("blog", blog);
             ActionContext ac = ActionContext.getContext();
-            List<Blog> users = blogService.findAll();
+            List<Blog> blogs = blogService.findAll();
 
             Long size = blogService.getRecords(new BlogExample());
             maxPage = (int) ((size - 1) / pageSize) + 1;
 
             ac.put("maxPage", maxPage);
-            ac.put("users", users);
+            ac.put("users", blogs);
         } catch (Exception e) {
             e.printStackTrace();
         }
@@ -156,15 +156,6 @@ public class BlogAction extends BaseAction {
 //        ac.put("maxPage", maxPage);
 //    }
 
-    @JSON(serialize = false)
-    public BlogService getUserService() {
-        return blogService;
-    }
-
-    public void setUserService(BlogService userService) {
-        this.blogService = userService;
-    }
-
     public String getResult() {
         return result;
     }
@@ -173,6 +164,8 @@ public class BlogAction extends BaseAction {
         this.result = result;
     }
 
+
+    @JSON(serialize = false)
     public BlogService getBlogService() {
         return blogService;
     }
