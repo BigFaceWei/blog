@@ -19,21 +19,22 @@
 <body>
 <div class="container">
     <div class="row clearfix">
-        <div class="col-md-12 column">
-            <s:form action="userAction!add" method="post">
-            <s:token/>
-            <div class="form-group">
-                <label for="account">账号</label>
-                <input type="text" class="form-control" name="user.userAccount" id="account"/>
-            </div>
-            <div class="form-group">
-                <label for="pwd">密码</label>
-                <input type="password" class="form-control" name="user.userPassword" id="pwd"/>
-            </div>
-            <input hidden="hidden" value=<s:property value="userId"/>/>
+        <div class="col-md-6 column">
+            <s:form action="blogAction!add" method="post">
+                <s:token/>
+                <div class="form-group">
+                    <label for="blogTitle">标题</label>
+                    <input type="text" class="form-control" name="blog.blogTitle" id="blogTitle"/>
+                </div>
+                <div class="form-group">
+                    <label for="blogContent">正文</label>
+                    <textarea rows="4" cols="90" name="blog.blogContent" id="blogContent"></textarea>
+                </div>
+                <input hidden="hidden" value=<s:property value="userId"/>/>
+
+                <button type="submit" class="btn btn-default">确定</button>
+            </s:form>
         </div>
-        <button type="submit" class="btn btn-default">确定</button>
-        </s:form>
     </div>
 </div>
 </body>

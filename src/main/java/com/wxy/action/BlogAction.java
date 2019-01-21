@@ -80,13 +80,13 @@ public class BlogAction extends BaseAction {
         return "goAdd";
     }
 
-//    public String add() {
-//        if (userService.addUser(blog)) {
-//            goIndex();
-//            return "index";
-//        }
-//        return "login";
-//    }
+    public String add() {
+        if (blogService.addBlog(blog)) {
+            goIndex();
+            return "index";
+        }
+        return "login";
+    }
 
 //    public String edit() {
 //        if (blogUserId != -1) {
@@ -113,15 +113,15 @@ public class BlogAction extends BaseAction {
 //        return ERROR;
 //    }
 
-//    private void goIndex() {
-//        ActionContext ac = ActionContext.getContext();
-//        List<BlogUser> users = userService.findAll();
-//        ac.put("users", users);
-//
-//        Long size = userService.getRecords(new BlogExample());
-//        maxPage = (int) ((size - 1) / pageSize) + 1;
-//        ac.put("maxPage", maxPage);
-//    }
+    private void goIndex() {
+        ActionContext ac = ActionContext.getContext();
+        List<Blog> blogs = blogService.findAll();
+        ac.put("blogs", blogs);
+
+        Long size = blogService.getRecords(new BlogExample());
+        maxPage = (int) ((size - 1) / pageSize) + 1;
+        ac.put("maxPage", maxPage);
+    }
 
     public String getResult() {
         return result;

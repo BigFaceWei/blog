@@ -14,7 +14,7 @@ public interface BlogService {
 
     boolean deleteById(int id);
 
-    boolean addUser(Blog user);
+    boolean addBlog(Blog user);
 
     Blog checkBlog(BlogExample user);
 

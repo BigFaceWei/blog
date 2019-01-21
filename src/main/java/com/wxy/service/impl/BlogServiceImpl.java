@@ -43,7 +43,7 @@ public class BlogServiceImpl implements BlogService {
     }
 
     @Override
-    public boolean addUser(Blog blog) {
+    public boolean addBlog(Blog blog) {
         boolean flag = false;
         try {
             blogMapper.insert(blog);
@@ -56,9 +56,9 @@ public class BlogServiceImpl implements BlogService {
 
     public Blog checkBlog(BlogExample blog) {
         try {
-            List<Blog> users = blogMapper.selectByExample(blog, null);
-            if (users != null && users.size() > 0) {
-                return users.get(0);
+            List<Blog> blogs = blogMapper.selectByExample(blog, null);
+            if (blogs != null && blogs.size() > 0) {
+                return blogs.get(0);
             }
         } catch (Exception e) {
             e.printStackTrace();
