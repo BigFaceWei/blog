@@ -53,21 +53,21 @@ public class BlogAction extends BaseAction {
         return "index";
     }
 
-//    public String search() {
-//        BlogExample userExample = new BlogExample();
+    public String search() {
+        BlogExample blogExample = new BlogExample();
 //        if (!StringUtils.isNullOrEmpty(userAccount)) {
 //            userExample.createCriteria().andUserAccountLike("%" + userAccount.trim() + "%");
 //        }
-//
-//        List<BlogUser> users = userService.search(userExample, (pageNum - 1) * 10);
-//        Long size = userService.getRecords(new BlogExample());
-//        ActionContext ac = ActionContext.getContext();
-//        ac.put("users", users);
-//
-//        maxPage = (int) ((size - 1) / pageSize) + 1;
-//        ac.put("maxPage", maxPage);
-//        return "index";
-//    }
+
+        List<Blog> blogs = blogService.search(blogExample, (pageNum - 1) * 10);
+        Long size = blogService.getRecords(new BlogExample());
+        ActionContext ac = ActionContext.getContext();
+        ac.put("users", blogs);
+
+        maxPage = (int) ((size - 1) / pageSize) + 1;
+        ac.put("maxPage", maxPage);
+        return "index";
+    }
 
     public String goAdd() {
         HttpSession session = request.getSession();
