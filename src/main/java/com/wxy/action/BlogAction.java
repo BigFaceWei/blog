@@ -8,6 +8,7 @@ import com.wxy.service.BlogService;
 import org.apache.struts2.json.annotations.JSON;
 
 import javax.servlet.http.HttpSession;
+import java.util.Date;
 import java.util.List;
 
 public class BlogAction extends BaseAction {
@@ -81,6 +82,10 @@ public class BlogAction extends BaseAction {
     }
 
     public String add() {
+        blog.setBlogImgs("");
+        blog.setBlogKindBig("");
+        blog.setBlogKindLabel("");
+        blog.setBlogTime(new Date().toString());
         if (blogService.addBlog(blog)) {
             goIndex();
             return "index";

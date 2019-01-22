@@ -30,8 +30,6 @@
                     <label for="blogContent">正文</label>
                     <textarea rows="4" cols="90" name="blog.blogContent" id="blogContent"></textarea>
                 </div>
-                <input hidden="hidden" value=<s:property value="userId"/>/>
-
                 <button type="submit" class="btn btn-default">确定</button>
             </s:form>
         </div>
