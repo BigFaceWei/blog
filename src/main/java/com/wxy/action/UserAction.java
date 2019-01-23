@@ -86,14 +86,14 @@ public class UserAction extends BaseAction {
         if (!StringUtils.isNullOrEmpty(userAccount)) {
             userExample.createCriteria().andUserAccountLike("%" + userAccount.trim() + "%");
         }
-
         List<BlogUser> users = userService.search(userExample, (pageNum - 1) * 10);
         Long size = userService.getRecords(new BlogUserExample());
         ActionContext ac = ActionContext.getContext();
-        ac.put("users", users);
-
         maxPage = (int) ((size - 1) / pageSize) + 1;
+
+        ac.put("users", users);
         ac.put("maxPage", maxPage);
+
         return "userList";
     }
 
