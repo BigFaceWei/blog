@@ -5,7 +5,6 @@ jQuery(document).ready(function () {
     findAll();
 });
 function findAll(){
-    alert("test-ajax");
     jQuery.ajax({
         type: 'post',
         url: "/blog/blogAction!search.do",

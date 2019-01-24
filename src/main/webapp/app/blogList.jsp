@@ -73,32 +73,19 @@
                 </div>
             </nav>
         </div>
-        <div class="col-md-12 column">
-            <h2>
-                Heading
-            </h2>
-            <p>
-                Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris
-                condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis
-                euismod. Donec sed odio dui.
-            </p>
-            <p>
-                <a class="btn" href="#">View details »</a>
-            </p>
-        </div>
-        <div class="col-md-12 column">
-            <h2>
-                Heading
-            </h2>
-            <p>
-                Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris
-                condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis
-                euismod. Donec sed odio dui.
-            </p>
-            <p>
-                <a class="btn" href="#">View details »</a>
-            </p>
-        </div>
+        <s:iterator id="blog" value="blogs" status="status">
+            <div class="col-md-12 column">
+                <h2>
+                    <s:property value="#blog.blogTitle"/>
+                </h2>
+                <p>
+                    <s:property value="#blog.blogContent"/>
+                </p>
+                <p>
+                    <a class="btn" href="#">详情 »</a>
+                </p>
+            </div>
+        </s:iterator>
     </div>
 </div>
 <div id="overlay" style="display: none;">

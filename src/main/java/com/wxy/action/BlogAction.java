@@ -58,11 +58,10 @@ public class BlogAction extends BaseAction {
 //        if (!StringUtils.isNullOrEmpty(userAccount)) {
 //            userExample.createCriteria().andUserAccountLike("%" + userAccount.trim() + "%");
 //        }
-
         List<Blog> blogs = blogService.search(blogExample, (pageNum - 1) * 10);
         Long size = blogService.getRecords(new BlogExample());
         ActionContext ac = ActionContext.getContext();
-        ac.put("users", blogs);
+        ac.put("blogs", blogs);
 
         maxPage = (int) ((size - 1) / pageSize) + 1;
         ac.put("maxPage", maxPage);
