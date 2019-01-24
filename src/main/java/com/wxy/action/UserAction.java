@@ -2,8 +2,10 @@ package com.wxy.action;
 
 import java.util.List;
 
+import com.wxy.model.Blog;
 import com.wxy.model.BlogUser;
 import com.mysql.jdbc.StringUtils;
+import com.wxy.service.BlogService;
 import com.wxy.service.UserService;
 import com.wxy.model.BlogUserExample;
 import com.opensymphony.xwork2.ActionContext;
@@ -12,9 +14,10 @@ import org.apache.struts2.json.annotations.JSON;
 import javax.servlet.http.HttpSession;
 
 public class UserAction extends BaseAction {
-    private static final long serialVersionUID = 1L;
+    private static final long serialVersionUID = 123L;
 
     private UserService userService;
+    private BlogService blogService;
     private String result;
     private Integer blogUserId = -1;
     private String userAccount;
@@ -67,14 +70,15 @@ public class UserAction extends BaseAction {
 
             BlogUser user = userService.findById(Integer.parseInt(userId));
             request.setAttribute("user", user);
+
             ActionContext ac = ActionContext.getContext();
-            List<BlogUser> users = userService.findAll();
+            List<Blog> blogs = blogService.findAll();
+            ac.put("blogs", blogs);
 
-            Long size = userService.getRecords(new BlogUserExample());
-            maxPage = (int) ((size - 1) / pageSize) + 1;
+//            Long size = userService.getRecords(new BlogUserExample());
+//            maxPage = (int) ((size - 1) / pageSize) + 1;
 
-            ac.put("maxPage", maxPage);
-            ac.put("users", users);
+//            ac.put("maxPage", maxPage);
         } catch (Exception e) {
             e.printStackTrace();
         }
@@ -161,6 +165,14 @@ public class UserAction extends BaseAction {
 
     public void setUserService(UserService userService) {
         this.userService = userService;
+    }
+
+    public BlogService getBlogService() {
+        return blogService;
+    }
+
+    public void setBlogService(BlogService blogService) {
+        this.blogService = blogService;
     }
 
     public String getResult() {
