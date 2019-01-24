@@ -2,9 +2,11 @@ jQuery(document).ready(function () {
     $('#logout').click(function () {
         exist();
     });
-    findAll();
+    // findAll();
+    // $.reload();
 });
 function findAll(){
+    alert("goto find");
     jQuery.ajax({
         type: 'post',
         url: "/blog/blogAction!search.do",
@@ -14,6 +16,7 @@ function findAll(){
         cache: false,
         contentType:'application/x-www-form-urlencoded; charset=UTF-8',
         success: function (data) {
+            alert("findAll");
             if(typeof(data)!='undefined'){
                 if(data.result ==="false"){
 

@@ -35,18 +35,10 @@ public class BlogAction extends BaseAction {
         try {
             HttpSession session = request.getSession();
             String userId = session.getAttribute("uid").toString();
+
             if (StringUtils.isNullOrEmpty(userId)) return "login";
+            goIndex();
 
-            Blog blog = blogService.findById(Integer.parseInt(userId));
-            request.setAttribute("blog", blog);
-            ActionContext ac = ActionContext.getContext();
-            List<Blog> blogs = blogService.findAll();
-
-            Long size = blogService.getRecords(new BlogExample());
-            maxPage = (int) ((size - 1) / pageSize) + 1;
-
-            ac.put("maxPage", maxPage);
-            ac.put("blogs", blogs);
         } catch (Exception e) {
             e.printStackTrace();
         }
@@ -58,13 +50,7 @@ public class BlogAction extends BaseAction {
 //        if (!StringUtils.isNullOrEmpty(userAccount)) {
 //            userExample.createCriteria().andUserAccountLike("%" + userAccount.trim() + "%");
 //        }
-        List<Blog> blogs = blogService.search(blogExample, (pageNum - 1) * 10);
-        Long size = blogService.getRecords(new BlogExample());
-        ActionContext ac = ActionContext.getContext();
-        ac.put("blogs", blogs);
-
-        maxPage = (int) ((size - 1) / pageSize) + 1;
-        ac.put("maxPage", maxPage);
+        goIndex();
         return "index";
     }
 
@@ -119,7 +105,7 @@ public class BlogAction extends BaseAction {
 
     private void goIndex() {
         ActionContext ac = ActionContext.getContext();
-        List<Blog> blogs = blogService.findAll();
+        List<Blog> blogs = blogService.search(new BlogExample(), (pageNum - 1) * 10);
         ac.put("blogs", blogs);
 
         Long size = blogService.getRecords(new BlogExample());

@@ -2,7 +2,6 @@ jQuery(document).ready(function () {
     $('#register').click(function () {
         window.location.href = "/blog/userAction!goAdd.do";
     });
-
     $('#login').click(function () {
         var username = $('.username').val();
         var password = $('.password').val();
@@ -24,14 +23,12 @@ jQuery(document).ready(function () {
             });
             return false;
         }
-
         login();
     });
 
     $('.page-container form .username, .page-container form .password').keyup(function () {
         $(this).parent().find('.error').fadeOut('fast');
     });
-
 });
 
 function login() {
@@ -55,14 +52,13 @@ function login() {
                     showTips("用户名或密码错误,登陆失败", 4000);
                 } else if (data.result === "true") {
                     showTips("登陆成功", 1000);
-                    window.location.href = "/blog/userAction!index.do";
+                    window.location.href = "/blog/blogAction!index.do";
                 }
                 unmaskobj("content");
             }
         }
     });
 }
-
 
 function maskobj(objid, msg) {
     mini.mask({

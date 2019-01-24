@@ -47,7 +47,6 @@ public class UserAction extends BaseAction {
 
         try {
             BlogUser retUser = userService.checkUser(user);
-
             if (retUser != null) {
                 HttpSession session = request.getSession();
                 session.setAttribute("uid", retUser.getBlogUserId());
@@ -60,29 +59,6 @@ public class UserAction extends BaseAction {
             e.printStackTrace();
         }
         return SUCCESS;
-    }
-
-    public String index() {
-        try {
-            HttpSession session = request.getSession();
-            String userId = session.getAttribute("uid").toString();
-            if (StringUtils.isNullOrEmpty(userId)) return "login";
-
-            BlogUser user = userService.findById(Integer.parseInt(userId));
-            request.setAttribute("user", user);
-
-            ActionContext ac = ActionContext.getContext();
-            List<Blog> blogs = blogService.findAll();
-            ac.put("blogs", blogs);
-
-//            Long size = userService.getRecords(new BlogUserExample());
-//            maxPage = (int) ((size - 1) / pageSize) + 1;
-
-//            ac.put("maxPage", maxPage);
-        } catch (Exception e) {
-            e.printStackTrace();
-        }
-        return "index";
     }
 
     public String search() {
@@ -167,6 +143,7 @@ public class UserAction extends BaseAction {
         this.userService = userService;
     }
 
+    @JSON(serialize = false)
     public BlogService getBlogService() {
         return blogService;
     }

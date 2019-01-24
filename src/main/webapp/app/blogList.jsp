@@ -79,9 +79,6 @@
                     <s:property value="#blog.blogTitle"/>
                 </h2>
                 <p>
-                    <s:property value="#blog.blogContent"/>
-                </p>
-                <p>
                     <a class="btn" href="#">详情 »</a>
                 </p>
             </div>
