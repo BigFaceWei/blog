@@ -78,6 +78,14 @@ public class BlogAction extends BaseAction {
         return "login";
     }
 
+    public String show(){
+        if (blogId != null){
+            blog =  blogService.findById(blogId);
+            return "show";
+        }
+        return "login";
+    }
+
 //    public String edit() {
 //        if (blogUserId != -1) {
 //            blog = userService.findById(blogUserId);

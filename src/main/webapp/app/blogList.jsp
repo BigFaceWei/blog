@@ -79,7 +79,7 @@
                     <s:property value="#blog.blogTitle"/>
                 </h2>
                 <p>
-                    <a class="btn" href="#">详情 »</a>
+                    <a class="btn" href="blogAction!show.do?blogId=<s:property value="#blog.blogId"/>">详情 »</a>
                 </p>
             </div>
         </s:iterator>
@@ -95,7 +95,6 @@
 <script type="text/javascript">
     var c = 0;
     var t;
-
     function timedCount() {
         c = c + 1;
         if (c === 60) {
@@ -108,7 +107,6 @@
     function stopCount() {
         clearTimeout(t);
     }
-
     function screenAdapter() {
         var bodyWidth = $(window).width();
         var bodyHeight = $(window).height();
